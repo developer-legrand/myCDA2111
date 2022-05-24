@@ -1,0 +1,33 @@
+{% include "header.html" %}
+
+<h1>Ajouter un nouveau candidat</h1>
+
+<p><a href="/candidates">Retour à la liste des candidats</a></p>
+
+
+<form action="" method="post">
+    {% if errors.lastname != undefined %}
+    <p class="danger">{{errors.lastname.msg}}</p>
+    {% endif %}
+    <div>
+        <label for="lastname">Nom: </label> <input type="text" id="lastname" name="lastname" value="{{ model.lastname }}" required>
+    </div>
+    {% if errors.firstname != undefined %}
+        <p class="danger">{{errors.firstname.msg}}</p>
+    {% endif %}
+    <div>
+        <label for="firstname">Prénom: </label> <input type="text" id="firstname" name="firstname" value="{{ model.firstname }}" required>
+    </div>
+    {% if errors.slogan != undefined %}
+        <p class="danger">{{errors.slogan.msg}}</p>
+    {% endif %}
+    <div>
+        <label for="slogan">Slogan: </label> <input type="text" id="slogan" name="slogan" value="{{ model.slogan }}">
+    </div>
+
+    <div>
+        <button type="submit">Enregistrer le nouveau candidat</button>
+    </div>
+</form>
+
+{% include "footer.html" %}

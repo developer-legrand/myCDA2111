@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# IDE0082: 'typeof' peut être converti en 'nameof'
+dotnet_diagnostic.IDE0082.severity = none

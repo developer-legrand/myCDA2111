@@ -1,0 +1,24 @@
+{% include "header.html" %}
+
+<h1>titre a modifié</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Slogan</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for candidate in model %}
+            <tr>
+                <td>{{ candidate.id }}</td>
+                <td>{{ candidate.lastname }}</td>
+                <td>{{ candidate.firstname }}</td>
+                <td>{{ candidate.slogan }}</td>      
+            </tr>
+            {% endfor %}
+    </tbody>
+    
+{% include "footer.html" %}

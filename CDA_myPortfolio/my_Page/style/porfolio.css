@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+:root {
+    --colorHeader: #3d3d3d;
+    --colorMain: #2e2d2d;
+    --colorFooter: #3d3d3d;
+    --textNavigation: #c6c9b7;
+    --textNavigationHover: #cfb178;
+    }
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "H1 H2 H3"
+    "M1 M2 M3"
+    "F1 F2 F3";
+    margin: 0 auto;
+    padding: 0 auto;
+    grid-gap: 5px;
+}
+
+
+header {
+    grid-area: 1/1/1/4;
+    background-color: var(--colorHeader);
+    display:flex;
+}
+#headerLogo {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: green;
+}
+
+
+#headerNavigation {
+   
+  
+}
+
+li {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    list-style: none;
+    min-width: 70px;
+  }
+
+li a {
+    color: var(--textNavigation);
+    text-decoration: none;
+    transition: .5s ease-in-out;
+    font-family: 'Hammersmith One', sans-serif;
+  }
+  
+  li a:hover {
+    color: var(--textNavigationHover);
+    transition: .5s ease-in-out;
+  }
+
+  #main1 {
+    display: flex;
+    grid-area: M3; 
+    background-color: rgb(185, 71, 86);
+  }
+
+  #main2 {
+    display: flex;
+    grid-area: M2;
+    background-color: rgb(187, 119, 128);
+  }
+
+  #mainSocialMedia {
+    display: flex;
+    grid-area: M3;
+    background-color: rgb(185, 71, 86);
+    width: 10%;
+  }
+
+  #footer1 {
+    display: flex;
+    grid-area: F1;   
+    background-color: rgb(185, 71, 86);
+  }
+  #footer2 {
+    display: flex;
+    grid-area: F2;   
+    background-color: rgb(219, 233, 168);
+  }
+  #footer3 {
+    display: flex;
+    grid-area: F3;   
+    background-color:  rgb(98, 166, 211);
+  }

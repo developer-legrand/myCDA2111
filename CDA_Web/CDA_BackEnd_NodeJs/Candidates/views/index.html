@@ -1,0 +1,52 @@
+{% include "header.html" %}
+
+<h1>{{ title }}</h1>
+<p><a href="/candidates/add" name="candidate_add">Ajouter un nouveau candidat</a></p>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Slogan</th>
+            <th>Actions</th>
+            <th>Select</th>
+        </tr>
+    </thead>
+
+    <form action="/candidates/mySelect" method="post">
+        <tbody>
+            {% for candidate in model %}
+                <tr>
+                    <td>{{ candidate.id }}</td>
+                    <td>{{ candidate.lastname }}</td>
+                    <td>{{ candidate.firstname }}</td>
+                    <td>{{ candidate.slogan }}</td>
+                    <td>
+                        <a href="/candidates/edit/{{ candidate.id }}">Modifier</a> 
+                        <a href="/candidates/delete/{{ candidate.id }}">Supprimer</a> 
+                    </td>
+                    <td style="background-color: rgb(190, 110, 130)" name="check" value= "{{ candidate.id }}">
+                       <!-- MySelectCell   -->
+                    </td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+
+        <tfoot>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <button type="submit" name='toto' value='Select' >Select</button>
+                <button type="submit" name='toto' value='Delete'>Delete</button>   
+                <button type="submit" name='toto' value='Modify'>Modify</button>      
+            </td>
+        </tfoot>
+    </form>
+</table>
+
+{% include "footer.html" %}
