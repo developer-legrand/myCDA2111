@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+    <style>
+        .highlight {
+          color: white;
+          background-color: black;
+          padding: 10px;
+          width: 250px;
+          text-align: center;
+        }
+        </style>
+  </head>
+  <body>
+      <section>
+        <img src="dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+      </section>
+      <script>
+        const link = document.querySelector('a');
+        link.textContent = 'Mozilla Developer Network'; 
+        link.href = 'https://developer.mozilla.org'; 
+        
+        //------- PARAGRAPHE CHILD -------
+        var sect = document.querySelector('section');
+        var para = document.createElement('p');
+        sect.appendChild(para); // determine la variable 'para' fille de 'sect'
+        para.textContent = 'We hope you enjoyed the ride.'; // création du paragraphe dans la section
+        
+        
+        //------- TEXT NODE -------
+        var text = document.createTextNode(' — the premier source for web development knowledge.');
+        var linkPara = document.querySelector('p');
+        linkPara.appendChild(text);
+        //------- MOVE TEXT NODE
+        sect.appendChild(linkPara);
+
+        //para.setAttribute('class', 'highlight'); // same result below
+        para.classList.add('highlight'); // same result above
+        // para.setAttribute('class', 'highlight');
+        //------- STYLE IN HEADER CALLED BY "para.setAttribute('class', 'highlight')"; --------
+        // para.style.color = 'white';
+        // para.style.backgroundColor = 'black';
+        // para.style.padding = '10px';
+        // para.style.width = '250px';
+        // para.style.textAlign = 'center';
+
+        
+        
+        //------- REMOVE ELEMENT --------
+        sect.removeChild(linkPara);
+        //------- 
+        // link.para.remove(); // NOT EFFICIENT WITH OLD NAVIGATOR WEB
+        //-------
+        // linkPara.parentNode.removeChild(linkPara); // ADAPTIVE 
+
+        const div = document.querySelector('div');
+        let winWidth = window.innerWidth;
+        let winHeight = window.innerHeight;
+
+        div.style.width = winWidth + 'px';
+        div.style.height = winHeight + 'px';
+
+
+    </script>
+  </body>
+</html>

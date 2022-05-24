@@ -1,0 +1,46 @@
+/* body {
+    margin: 0 auto;
+    padding: 0 auto;
+    display: grid;
+    grid-template-columns: 150px  150px 2fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "HEADER HEADER HEADER"
+    "MAIN1 MAIN2 MAIN3"
+    "FOOTER FOOTER FOOTER";
+  }
+
+  .myValidation {
+    display: flex;
+    background-color:rgb(228, 227, 212);
+    grid-area:  MAIN2;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .myButtonValidation {
+    height: 50px;
+    width: 150px;
+    align-items: center;
+  }
+
+  .research {
+    display: flex;
+    align-items: center;
+    background-color: rgb(87, 87, 87);
+    grid-area:  MAIN1;
+    justify-content: center;
+  }
+
+  .myResearch { 
+    height: 50px;
+    width: 100px;
+  }
+
+  .myResult {
+    display: flex;
+    align-items: center;
+    background-color: rgb(87, 87, 87);
+    grid-area:  MAIN3;
+    justify-content: center;
+  }  */
