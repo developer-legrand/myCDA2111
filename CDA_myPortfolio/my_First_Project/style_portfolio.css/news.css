@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+
+:root {
+  --background: #353535;
+  --header-footer: #222222;
+  --big-text: #e09557;
+  --medium-text: #e2bb9a;
+  --text: #e6c9b1;
+  --mouseover: #ff7402;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+.main-news {
+  display: grid;
+  grid-area: MAIN;
+  background-color: var(--background);
+}
+
+.article-container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ padding: 50px 300px 50px 300px;
+ column-gap: 10px;
+ row-gap: 5px;
+}
+
+/* -------- ARTICLE 1 */
+
+.box {
+  display:flex;
+  flex-direction: column;
+  background-color:#d38647;
+  flex: 1;
+  height: 40vh;
+  align-self:center;
+}
+  
+.title-article {
+  display: grid;
+  background-color: var(--header-footer);
+  align-content: center;
+  justify-items: center;
+  font-size: 17px;
+  font-family: 'Overpass', sans-serif;
+  color: var(--text);
+  border-top: solid 1px var(--text);
+  height: 5vh;
+}
+
+.img1 {
+  background-image: url("/media.css/images.css/A1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: grayscale(1);
+  flex: 1;
+}
+
+.img2 {
+  background-image: url("/media.css/images.css/A2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: grayscale(1);
+  flex: 1;
+}
+
+.img3 {
+  background-image: url("/media.css/images.css/A3.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: grayscale(1);
+  flex: 1;
+}
+
+.content-article {
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+  color:var(--header-footer);
+  padding: 15px 15px 15px 15px;
+  background-color: var(--medium-text);
+  height: 10vh;
+}
+
+.box a {
+  padding: 5px 0px 5px 15px;
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  color: var(--text);
+  background-color: var(--header-footer);
+}
+
+
+
+
+
+

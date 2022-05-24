@@ -1,0 +1,5 @@
+
+Ceci est un import de fichier texte avec JQUERY.
+Vraiment pratique pour la gestion d'un blog !
+
+

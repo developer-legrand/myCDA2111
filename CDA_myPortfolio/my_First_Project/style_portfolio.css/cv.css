@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+
+:root {
+  --background: #353535;
+  --header-footer: #222222;
+  --big-text: #e09557;
+  --medium-text: #e2bb9a;
+  --text: #e6c9b1;
+  --mouseover: #ff7402;
+  }
+
+.main-cv {
+    display: grid;
+    grid-area: MAIN;
+    
+    background-color: #2b4b66;
+  }

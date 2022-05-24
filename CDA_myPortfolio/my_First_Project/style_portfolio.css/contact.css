@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+
+:root {
+  --background: #353535;
+  --header-footer: #222222;
+  --big-text: #e09557;
+  --medium-text: #e2bb9a;
+  --text: #e6c9b1;
+  --mouseover: #ff7402;
+  }
+
+.main-contact {
+  display: grid;
+  grid-area: MAIN;
+  background-color: var(--background);
+  align-items: center;
+  justify-items: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  background-color: var(--header-footer);
+  width: 70ch;
+  height:50vh;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif;
+ }
+
+ .contact-container input {
+  margin-top: 5px;
+  align-self: center;
+  width: 50ch;
+  height: 5vh;
+  font-family: 'Overpass', sans-serif;
+  flex:1;
+ }
+ 
+ .contact-container .comment {
+  margin-top: 5px;
+  align-self: center;
+  width: 30ch;
+  max-width: 30ch;
+  height: 15vh;
+  font-family: 'Overpass', sans-serif;
+  font-size: 20px;
+ }
+
+ 
+ .contact-container .button-send {
+  margin-top: 50px;
+  width: 7em;
+  justify-content: start;
+  background-color: #e49454;
+  border: none;
+  font-family: 'Overpass', sans-serif;
+ }
+
+ .button-send:hover {
+  background-color: var(--mouseover);
+ }
+
+
+
+
+

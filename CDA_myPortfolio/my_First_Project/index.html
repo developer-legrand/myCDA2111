@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style_portfolio.css/portfolio.css">
+    <link rel="stylesheet" href="/style_portfolio.css/news.css">
+    <link rel="stylesheet" href="/style_portfolio.css/cv.css">
+    <link rel="stylesheet" href="/style_portfolio.css/contact.css">
+    <!-- ------- JAVASCRIPT / JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="/style_portfolio.css/porfolio.js" defer></script>
+    <script src="/style_portfolio.css/article.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+        <!-- ------- HEADER -->
+        <div class="void">
+        </div> 
+        <!-- -------NAV -->
+        <nav class="navigation">
+            <li><a href="#" id="link-about" onclick="clickonelement(this)">About</a></li>
+            <li><a href="#" id="link-cv" onclick="clickonelement(this)">C.Vitae</a></li>
+            <li><a href="#" id="link-news" onclick="clickonelement(this)">News</a></li>
+            <li><a href="#" id="link-contact" onclick="clickonelement(this)">Contact</a></li>
+        </nav>    
+        <!-- -------MAIN -->
+        <div id="about" class="main-about">
+            <div class="title">
+                <h1 class="hello">hello, I am</h1>
+                <h1 class="name">&nbspCyril Legrand</h1>
+            </div>
+            <h3></h3>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad tempore repellendus animi eius sit numquam quam eaque error placeat incidunt provident natus laudantium voluptatum, architecto dolorem a itaque ipsa eveniet?</h2>
+        </div>
+        <div id="news" class="main-news">
+            <div class="article-container">
+                <div class="box">
+                    <div class="img1"></div>
+                    <div class="title-article ">Ceci est un titre</div>
+                    <div class="content-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sed harum eius qui ex? Ab impedit nulla pariatur. Architecto veniam enim provident distinctio quas praesentium libero necessitatibus laborum possimus consequatur.</div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="box">
+                    <div class="img2"></div>
+                    <div class="title-article ">ceci est un autre titre</div>
+                    <div class="content-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sed harum eius qui ex? Ab impedit nulla pariatur. Architecto veniam enim provident distinctio quas praesentium libero necessitatibus laborum possimus consequatur.</div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="box">
+                    <div class="img3"></div>
+                    <div class="title-article">... encore un titre</div>
+                    <div id="A3" class="content-article"></div>
+                    <a href="">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div id="cv" class="main-cv">
+            <div class="title">
+                <h1>curriculum</h1>
+                <h1>vitae</h1>
+            </div>
+        </div>
+        
+        <div id="contact" class="main-contact">
+            <a href="#"> </a>
+            <div class="contact-container">
+                <fieldset>
+                <form action="index.html">
+                <input type="email" placeholder="email@adress.com">
+                <input type="email" placeholder="email@subject">
+                <textarea class="comment" placeholder="Type your comment here."></textarea>
+                <input class="button-send" type="submit" name="submit" value="Send">
+                </form>  
+                </fieldset>
+            </div>
+            
+        </div>
+            <!-- -------FOOTER -->
+        <section class="footer">
+            <a class="social">Social Networks</a>
+            <div class="test">
+                <a href="#" class="twitter"></a>
+                <a href="https://github.com/CLegrandDEV" target="_blank" class="github"></a>
+                <a href="https://www.linkedin.com/in/cyril-legrand-b19309213/" target="_blank" class="linkedin"></a>
+            </div>   
+        </section>
+    
+</body>
+</html>

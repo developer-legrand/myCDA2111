@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+
+:root {
+  --background: #353535;
+  --header-footer: #222222;
+  --big-text: #e09557;
+  --medium-text: #e2bb9a;
+  --text: #e6c9b1;
+  --mouseover: #ff7402;
+  }
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas: 
+  "HEADER NAV"
+  "MAIN MAIN"
+  "FOOTER FOOTER";
+}
+
+.void {
+  display: grid;
+  background-color: var(--header-footer);
+  grid-area: HEADER;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px; 
+  border-bottom: solid 1px var(--medium-text);
+}
+
+/* ------- NAVIGATION */
+
+.navigation {
+  background-color: var(--header-footer);
+  display: flex;
+  flex-direction: row;
+  grid-area: NAV;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px; 
+  border-bottom: solid 1px var(--medium-text);
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  list-style: none;
+  flex-direction: row; 
+  min-width: 70px;
+}
+
+li a {
+  color: var(--text);
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+
+li a:hover {
+  color: var(--mouseover);
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+
+/* -------- MAIN */
+
+.main-about {
+  display: flex; 
+  flex-direction: column;
+  grid-area: MAIN;
+  padding-left: 300px; 
+  background-image: url("/media.css/images.css/portfolio_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  justify-content: center;
+  
+}
+
+.main-about .title {
+  display: flex;
+  align-items: center;
+  color: var(--text);
+  margin-top: 30px;
+}
+
+.hello {
+  font-family: 'Overpass', sans-serif;
+  font-size: 40px;
+  color: var(--text);
+}
+
+.name {
+  font-family: 'Overpass', sans-serif;
+  font-size: 60px;
+  color: var(--big-text);
+}
+
+h2 {
+  top: 20px;
+  color: var(--text);
+  width: 300px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+h3 {
+  width: 170px;
+  height: 1px;
+  background-color: #e2bb9a;
+  
+}
+
+/* ------- FOOTER */
+.footer {
+  display: flex;
+  grid-area: FOOTER;
+  background-color: var(--header-footer);
+  border-top: solid 1px var(--text);
+  align-items: center;
+
+}
+
+.footer a {
+  font-size: 20px;
+  font-family: 'Overpass', sans-serif;
+  color: var(--text);
+  margin-left: 300px;
+}
+
+.social {
+  display: flex;
+  margin-left: 15px;
+}
+.test {
+  display: flex;
+  margin-left: 15px;
+}
+
+.test a {
+  margin-left: 15px;
+}
+
+.twitter {
+  background-image: url("/media.css/icons.css/twitter_icon.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  border-radius: 7px;
+}
+
+.twitter:hover {
+  background-image: url("/media.css/icons.css/twitter_icon_hover.png");
+}
+
+.github {
+  background-image: url("/media.css/icons.css/gitHub-icon.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  border-radius: 7px;
+}
+
+.github:hover {
+  background-image: url("/media.css/icons.css/gitHub-icon-hover.png");
+}
+
+.linkedin {
+  background-image: url("/media.css/icons.css/linkedin_icon.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  border-radius: 7px;
+}
+
+.linkedin:hover {
+  background-image: url("/media.css/icons.css/linkedin_icon_hover.png");
+}
+
+
+
+
+
+
+
+
