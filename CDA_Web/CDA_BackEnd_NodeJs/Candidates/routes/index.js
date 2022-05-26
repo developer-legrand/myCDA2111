@@ -28,7 +28,6 @@ router.get('/api/select/:mySelectId' ,apiController.getMySelectId)
 router.get('/candidates/edit/:id', candidatesController.update_view)
 router.post('/candidates/edit/:id', validator.candidateValidator, candidatesController.update_post)
 
-
 router.get('/candidates/delete/:id', candidatesController.remove_view)
 router.post('/candidates/delete/:id', candidatesController.remove_post)
 

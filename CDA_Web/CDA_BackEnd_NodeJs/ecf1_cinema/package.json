@@ -1,0 +1,17 @@
+{
+  "name": "ecf1_cinema",
+  "version": "1.0.0",
+  "description": "ecf absence",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-validator": "^6.14.1",
+    "liquid": "^5.1.1",
+    "sqlite3": "^5.0.8"
+  }
+}

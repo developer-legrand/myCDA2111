@@ -20,6 +20,7 @@ exports.getOneId = (id) => {
  * @returns {Promise}
  */
  exports.createId = (model) => {
+
     const sql = `INSERT INTO candidates (lastname, firstname, slogan) VALUES (?, ?, ?)`
     const params = [model.lastname, model.firstname, model.slogan]
     return repo.execute(sql, params)
