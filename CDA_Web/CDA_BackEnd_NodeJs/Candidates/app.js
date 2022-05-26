@@ -29,8 +29,12 @@ const router = require('./routes')
 // association du router à l'app
 app.use('/', router)
 
+//test 
+console.log('test')
+
 //fonction anonyme
 //démarrage du serveur
 app.listen(3000, () => {
     console.log("serveur prêt (http://localhost)")
 });
+
