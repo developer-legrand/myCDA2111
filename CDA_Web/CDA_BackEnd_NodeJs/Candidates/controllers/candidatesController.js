@@ -22,7 +22,7 @@ module.exports = {
 
      async getById (req, res) {
         try {
-            let result = await repo.getOneId()
+            let result = await repo.getOneId(req)
             res.render('index',{ model : result })
         } catch (err) {
                 res.status(500).send()

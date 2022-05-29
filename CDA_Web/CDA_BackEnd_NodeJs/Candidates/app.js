@@ -9,7 +9,6 @@ const app = express();
 app.use(bodyParser.urlencoded())
 app.use(bodyParser.json())
 
-
 // middleware : s'exécute à chaque requête
 app.use((req, res, next) => {
     let method = req.method;
