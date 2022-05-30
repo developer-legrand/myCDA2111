@@ -4,13 +4,14 @@
   "description": "ECF backend CDA2111",
   "main": "app.js",
   "scripts": {
-    "final" : "nodemon app.js"
+    "final": "nodemon app.js"
   },
   "author": "cyril legrand",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.1",
-    "express-validator": "^6.14.0",
+    "express-validator": "^6.14.1",
+    "liquid": "^5.1.1",
     "nodemon": "^2.0.16",
     "sqlite3": "^5.0.8"
   }
