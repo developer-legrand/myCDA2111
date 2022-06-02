@@ -1,0 +1,7 @@
+C:\Users\cyril\source\repos\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.csproj.AssemblyReference.cache
+C:\Users\cyril\source\repos\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.App.resources
+C:\Users\cyril\source\repos\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.csproj.GenerateResource.cache
+C:\Users\cyril\source\repos\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cyril\source\repos\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.AssemblyInfoInputs.cache
+C:\Users\cyril\source\repos\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.AssemblyInfo.cs
+C:\Users\cyril\source\repos\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.csproj.CoreCompileInputs.cache
