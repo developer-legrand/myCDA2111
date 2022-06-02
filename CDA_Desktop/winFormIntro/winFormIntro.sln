@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormLearning", "WinFormL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Addition", "Addition\Addition.csproj", "{5037CA40-7D41-4FAF-B23F-53F0DCDF82A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saisieFormulaire", "saisieFormulaire\saisieFormulaire.csproj", "{94356897-E511-47F3-9A2E-548C18FD8C68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "saisieFormulaire", "saisieFormulaire\saisieFormulaire.csproj", "{94356897-E511-47F3-9A2E-548C18FD8C68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "formulaire", "..\..\..\..\..\source\repos\winFormIntro\formulaire\formulaire.csproj", "{6398C9FF-686D-428A-A099-DE75FCE19FA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{94356897-E511-47F3-9A2E-548C18FD8C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94356897-E511-47F3-9A2E-548C18FD8C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94356897-E511-47F3-9A2E-548C18FD8C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6398C9FF-686D-428A-A099-DE75FCE19FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6398C9FF-686D-428A-A099-DE75FCE19FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6398C9FF-686D-428A-A099-DE75FCE19FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6398C9FF-686D-428A-A099-DE75FCE19FA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
