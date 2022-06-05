@@ -1,0 +1,17 @@
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\bin\Debug\net6.0-windows\ajoutFormulaireV3.exe
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\bin\Debug\net6.0-windows\ajoutFormulaireV3.deps.json
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\bin\Debug\net6.0-windows\ajoutFormulaireV3.runtimeconfig.json
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\bin\Debug\net6.0-windows\ajoutFormulaireV3.dll
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\bin\Debug\net6.0-windows\ajoutFormulaireV3.pdb
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.csproj.AssemblyReference.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.Form1.resources
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.csproj.GenerateResource.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.AssemblyInfoInputs.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.AssemblyInfo.cs
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.csproj.CoreCompileInputs.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.dll
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\refint\ajoutFormulaireV3.dll
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.pdb
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ajoutFormulaireV3.genruntimeconfig.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutFormulaireV3\obj\Debug\net6.0-windows\ref\ajoutFormulaireV3.dll

@@ -23,8 +23,8 @@ namespace ajoutFormulaire
         private ErrorProvider textDateForm = new();
         private ErrorProvider textMontantForm = new();
         private ErrorProvider textCodeForm = new();
-        /*private ErrorProvider textEmpty = new();*/
-
+      
+        
         private void btnValiderForm(object sender, EventArgs e)
         {
             ValidateForm();
@@ -32,31 +32,28 @@ namespace ajoutFormulaire
 
         private void ValidateForm()
         {
-            ValidateName();
-            ValidateDate();
-            ValidateMontant();
-            ValidateCodePostal();
-
-            if (ValidateName() && ValidateDate() && ValidateMontant() && ValidateCodePostal())
+            bool trueNom = ValidateName();
+            bool trueDate = ValidateDate();
+            bool trueMontant = ValidateMontant();
+            bool trueCode= ValidateCodePostal();
+            if (trueNom && trueDate && trueMontant && trueCode)
             {
                 MessageBox.Show("Nom : " + txtNom.Text + Environment.NewLine +
-                                          "Date : " + txtDate.Text + Environment.NewLine +
-                                          "Montant : " + txtMontant.Text + Environment.NewLine +
-                                          "Code : " + txtCode.Text,
-                                          "Validation effectuée",
-                                          MessageBoxButtons.OK);
+                                "Date : " + txtDate.Text + Environment.NewLine +
+                                "Montant : " + txtMontant.Text + Environment.NewLine +
+                                "Code : " + txtCode.Text,
+                                "Validation effectuée",
+                                MessageBoxButtons.OK);
 
                 DialogResult dr = MessageBox.Show
-                ("Fin de l’application ?", "FIN",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question,
-                MessageBoxDefaultButton.Button1);
-                if (dr == DialogResult.Yes)
-                {
-                    Application.Exit();
-                }
-               
-                
+                                ("Fin de l’application ?", "FIN",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question,
+                                MessageBoxDefaultButton.Button1);
+                                if (dr == DialogResult.Yes)
+                                {
+                                    Application.Exit();
+                                }
             }
             else
             {
@@ -167,16 +164,6 @@ namespace ajoutFormulaire
                 txtCode.BackColor = Color.Red;           
                 return false;
             }
-            
         }
-
-  /*      private bool IsEmptyOrNullInput(string txtBoxName)
-        {
-            TextBox verifyTxtBox = new(); 
-            verifyTxtBox.Name = txtBoxName;
-            txtBoxName.Text.ToString(); 
-            MessageBox.Show(txtBoxName.Text.ToString());
-            return true;
-        }*/
     }
 }

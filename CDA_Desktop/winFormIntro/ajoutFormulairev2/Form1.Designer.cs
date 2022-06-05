@@ -49,6 +49,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "Valider";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.BtnValiderTxtBox);
             // 
             // button1
             // 
@@ -58,6 +59,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Effacer";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.BtnEffacerTxtBox);
             // 
             // txtCode
             // 
@@ -65,6 +67,7 @@
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(166, 23);
             this.txtCode.TabIndex = 19;
+            this.txtCode.TextChanged += new System.EventHandler(this.TxtCodeChange);
             // 
             // txtMontant
             // 
@@ -72,6 +75,7 @@
             this.txtMontant.Name = "txtMontant";
             this.txtMontant.Size = new System.Drawing.Size(166, 23);
             this.txtMontant.TabIndex = 18;
+            this.txtMontant.TextChanged += new System.EventHandler(this.TxtMontantChange);
             // 
             // txtDate
             // 
@@ -79,6 +83,7 @@
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(166, 23);
             this.txtDate.TabIndex = 17;
+            this.txtDate.TextChanged += new System.EventHandler(this.TxtDateChange);
             // 
             // txtNom
             // 
@@ -86,7 +91,7 @@
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(166, 23);
             this.txtNom.TabIndex = 16;
-            this.txtNom.TextChanged += new System.EventHandler(this.txtBoxChange);
+            this.txtNom.TextChanged += new System.EventHandler(this.TxtNameChange);
             // 
             // label5
             // 
