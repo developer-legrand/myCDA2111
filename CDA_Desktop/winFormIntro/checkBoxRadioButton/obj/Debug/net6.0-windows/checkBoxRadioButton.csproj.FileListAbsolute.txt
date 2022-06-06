@@ -1,0 +1,17 @@
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\bin\Debug\net6.0-windows\checkBoxRadioButton.exe
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\bin\Debug\net6.0-windows\checkBoxRadioButton.deps.json
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\bin\Debug\net6.0-windows\checkBoxRadioButton.runtimeconfig.json
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\bin\Debug\net6.0-windows\checkBoxRadioButton.dll
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\bin\Debug\net6.0-windows\checkBoxRadioButton.pdb
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.csproj.AssemblyReference.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.Form1.resources
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.csproj.GenerateResource.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.AssemblyInfoInputs.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.AssemblyInfo.cs
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.csproj.CoreCompileInputs.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.dll
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\refint\checkBoxRadioButton.dll
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.pdb
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\checkBoxRadioButton.genruntimeconfig.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\checkBoxRadioButton\obj\Debug\net6.0-windows\ref\checkBoxRadioButton.dll

@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormLearning", "WinFormL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Addition", "Addition\Addition.csproj", "{5037CA40-7D41-4FAF-B23F-53F0DCDF82A9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "saisieFormulaire", "saisieFormulaire\saisieFormulaire.csproj", "{94356897-E511-47F3-9A2E-548C18FD8C68}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ajoutFormulaire", "ajoutFormulaire\ajoutFormulaire.csproj", "{4FC1F5B3-0EA8-4331-A7C0-56D9FD35532C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ajoutFormulairev2", "ajoutFormulairev2\ajoutFormulairev2.csproj", "{C81C2114-CB81-4187-9C2D-7566A086C29C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ajoutFormulaireV3", "ajoutFormulaireV3\ajoutFormulaireV3.csproj", "{43F80628-C734-4323-A67C-A2768EB5D761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ajoutFormulaireV3", "ajoutFormulaireV3\ajoutFormulaireV3.csproj", "{43F80628-C734-4323-A67C-A2768EB5D761}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ajoutFormulaireValidating", "ajoutFormulaireValidating\ajoutFormulaireValidating.csproj", "{E07C71B8-259E-46E9-9FCA-96F7182A654A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkBoxRadioButton", "checkBoxRadioButton\checkBoxRadioButton.csproj", "{1C2F7CA8-0929-45C1-A589-6DA8F35FB5F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +37,6 @@ Global
 		{5037CA40-7D41-4FAF-B23F-53F0DCDF82A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5037CA40-7D41-4FAF-B23F-53F0DCDF82A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5037CA40-7D41-4FAF-B23F-53F0DCDF82A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94356897-E511-47F3-9A2E-548C18FD8C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94356897-E511-47F3-9A2E-548C18FD8C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94356897-E511-47F3-9A2E-548C18FD8C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94356897-E511-47F3-9A2E-548C18FD8C68}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4FC1F5B3-0EA8-4331-A7C0-56D9FD35532C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4FC1F5B3-0EA8-4331-A7C0-56D9FD35532C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FC1F5B3-0EA8-4331-A7C0-56D9FD35532C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +49,14 @@ Global
 		{43F80628-C734-4323-A67C-A2768EB5D761}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43F80628-C734-4323-A67C-A2768EB5D761}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43F80628-C734-4323-A67C-A2768EB5D761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E07C71B8-259E-46E9-9FCA-96F7182A654A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07C71B8-259E-46E9-9FCA-96F7182A654A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07C71B8-259E-46E9-9FCA-96F7182A654A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07C71B8-259E-46E9-9FCA-96F7182A654A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2F7CA8-0929-45C1-A589-6DA8F35FB5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2F7CA8-0929-45C1-A589-6DA8F35FB5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2F7CA8-0929-45C1-A589-6DA8F35FB5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2F7CA8-0929-45C1-A589-6DA8F35FB5F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

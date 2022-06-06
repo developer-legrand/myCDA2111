@@ -21,6 +21,7 @@ namespace Addition
         private void btn_Resultat_Click(object sender, EventArgs e)
         {
             string myResult = txtBoxView.Text;
+           
             string[] myResultSplit = myResult.Split('+');
             int[] myResultInt = Array.ConvertAll(myResultSplit, int.Parse);
             int myResultFinal = myResultInt.Sum();

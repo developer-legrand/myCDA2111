@@ -59,10 +59,11 @@ namespace ajoutFormulairev2
 
         private void TxtMontantChange(object sender, EventArgs e)
         {
-            
+
             bool isValidMontant = float.TryParse(txtMontant.Text, out number);
             montantFormat = number.ToString("0.00");
             montant = txtMontant.Text;
+
             if (isValidMontant && (montantFormat == montant))
             {
                 textMontantError.SetError(txtMontant, "");
@@ -108,14 +109,34 @@ namespace ajoutFormulairev2
 
         private void BtnValiderTxtBox(object sender, EventArgs e)
         {
-            if ()
+            bool errorNomEmpty = textNomError.GetError(txtMontant) == "";
+            bool errorDateEmpty = textDateError.GetError(txtDate) == "";
+            bool errorMontantEmpty = textMontantError.GetError(txtMontant) == "";
+            bool errorCodeEmpty = textCodeError.GetError(txtCode) == "";
+            if (String.IsNullOrEmpty(nom))
+            {
+                textNomError.SetError(txtNom, "le champ ne peut être vide");
+            }
+            if (String.IsNullOrEmpty(date))
+            {
+                textDateError.SetError(txtDate, "le champ ne peut être vide");
+            }
+            if (String.IsNullOrEmpty(montant))
+            {
+                textMontantError.SetError(txtMontant, "le champ ne peut être vide");
+            }
+            if (String.IsNullOrEmpty(code))
+            {
+                textCodeError.SetError(txtCode, "le champ ne peut être vide");
+            }
+            else if (errorNomEmpty && errorDateEmpty && errorMontantEmpty && errorCodeEmpty)
             {
                 MessageBox.Show("Nom : " + txtNom.Text + Environment.NewLine +
-                          "Date : " + txtDate.Text + Environment.NewLine +
-                          "Montant : " + txtMontant.Text + Environment.NewLine +
-                          "Code : " + txtCode.Text,
-                          "Validation effectuée",
-                          MessageBoxButtons.OK);
+                "Date : " + txtDate.Text + Environment.NewLine +
+                "Montant : " + txtMontant.Text + Environment.NewLine +
+                "Code : " + txtCode.Text,
+                "Validation effectuée",
+                MessageBoxButtons.OK);
 
                 DialogResult dr = MessageBox.Show
                                 ("Fin de l’application ?", "FIN",

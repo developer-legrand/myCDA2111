@@ -166,19 +166,7 @@ namespace ajoutFormulaireV3
                 {
                     Application.Exit();
                 }
-            }
-            
+            } 
         }
-
-  /*      private bool IsErrorTxtBox(string uhu)
-        {
-            TextBox box = sender as TextBox;
-             
-            if (errorProvider.GetError(box) == "")
-            {
-                
-                return true;
-            }
-        }*/
     }
 }

@@ -12,3 +12,10 @@ C:\Users\cyril\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomat
 C:\Users\cyril\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.AssemblyInfoInputs.cache
 C:\Users\cyril\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.AssemblyInfo.cs
 C:\Users\cyril\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.csproj.CoreCompileInputs.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.csproj.AssemblyReference.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.App.resources
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.csproj.GenerateResource.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.AssemblyInfoInputs.cache
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.AssemblyInfo.cs
+C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\boutonAutomatique\obj\Debug\net6.0-windows\boutonAutomatique.csproj.CoreCompileInputs.cache
