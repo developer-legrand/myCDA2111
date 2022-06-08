@@ -98,6 +98,7 @@
             this.rbMajuscule.TabStop = true;
             this.rbMajuscule.Text = "Majuscules";
             this.rbMajuscule.UseVisualStyleBackColor = true;
+            this.rbMajuscule.CheckedChanged += new System.EventHandler(this.RbCasseSelect);
             // 
             // bgCaractere
             // 

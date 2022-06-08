@@ -3,9 +3,7 @@ namespace checkBoxRadioButtonV2
 {
     public partial class Form1 : Form
     {
-        string toUpper;
-        string toLower;
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +23,6 @@ namespace checkBoxRadioButtonV2
             rbCaractereBlanc.Tag = Color.White;
             rbCaractereNoir.Tag = Color.Black;
             rbCaractereRouge.Tag = Color.Red;
-
         }
 
         private void TbInputUser_TextChanged(object sender, EventArgs e)
@@ -63,9 +60,10 @@ namespace checkBoxRadioButtonV2
         private void RbCasseSelect(object sender, EventArgs e)
         {
             //gestion de la casse du texte du label
-            rbMajuscule.Tag = labelInputUserControl.Text.ToUpper();
-            rbMinuscule.Tag = labelInputUserControl.Text.ToLower();
-       
+            rbMajuscule.Tag = tbInputUser.Text.ToUpper();
+            rbMinuscule.Tag = tbInputUser.Text.ToLower();
+            RadioButton myRadioButton = (RadioButton)sender;
+            labelInputUserControl.Text = (string)myRadioButton.Tag;
         }
     }    
 }
