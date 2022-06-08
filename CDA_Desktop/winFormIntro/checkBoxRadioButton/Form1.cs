@@ -21,7 +21,7 @@ namespace checkBoxRadioButton
             labelInputUserControl.Text = tbInputUser.Text;
             if (!String.IsNullOrEmpty(labelInputUserControl.Text))
             {
-                gbChoix.Enabled = true;
+                gbChoix.Enabled = true;       
             } else
             {
                 gbChoix.Enabled = false;
@@ -134,10 +134,6 @@ namespace checkBoxRadioButton
             }
         }
 
-
-        private void rbCaractereRouge_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
