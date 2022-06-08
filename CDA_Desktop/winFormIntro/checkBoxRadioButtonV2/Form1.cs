@@ -3,24 +3,28 @@ namespace checkBoxRadioButtonV2
 {
     public partial class Form1 : Form
     {
+        string toUpper;
+        string toLower;
+
         public Form1()
         {
             InitializeComponent();
         }
-
-            
-
+ 
         private void Form1_Load(object sender, EventArgs e)
         {
             //gestion des Groupbox Visible
             cbCouleurFond.Tag = bgFond;
             cbCouleurCaractere.Tag = bgCaractere;
             cbCasse.Tag = bgCasse;
-
-            //gestion du de couleur de la couleur de fond du label
+            //gestionde la couleur de fond du label
             rbFondBleu.Tag = Color.Blue;
-            rbFondRouge.Tag = Color.Blue;
-            rbFondVert.Tag = Color.Vert;
+            rbFondRouge.Tag = Color.Red;
+            rbFondVert.Tag = Color.Green;
+            //gestion de la couleur du texte du label
+            rbCaractereBlanc.Tag = Color.White;
+            rbCaractereNoir.Tag = Color.Black;
+            rbCaractereRouge.Tag = Color.Red;
 
         }
 
@@ -44,13 +48,24 @@ namespace checkBoxRadioButtonV2
             myGroupBox.Visible = myCheckBox.Checked;
         }
 
-        private void RadioBoxSelect(object sender, EventArgs e)
+        private void RbFondSelect(object sender, EventArgs e)
         {
             RadioButton myRadioButton = (RadioButton)sender;
-            Label myLabel = (Label)myRadioButton.Tag;
-            myLabel.BackColor = myRadioButton.Checked;
+            labelInputUserControl.BackColor = (Color)myRadioButton.Tag;
         }
-    }
 
-        
+        private void RbCaractereSelect(object sender, EventArgs e)
+        {
+            RadioButton myRadioButton = (RadioButton)sender;
+            labelInputUserControl.ForeColor = (Color)myRadioButton.Tag;
+        }
+
+        private void RbCasseSelect(object sender, EventArgs e)
+        {
+            //gestion de la casse du texte du label
+            rbMajuscule.Tag = labelInputUserControl.Text.ToUpper();
+            rbMinuscule.Tag = labelInputUserControl.Text.ToLower();
+       
+        }
+    }    
 }

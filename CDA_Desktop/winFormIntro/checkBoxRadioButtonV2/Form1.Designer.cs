@@ -55,7 +55,7 @@
             // 
             this.labelInputUserControl.AutoSize = true;
             this.labelInputUserControl.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelInputUserControl.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelInputUserControl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelInputUserControl.Location = new System.Drawing.Point(40, 173);
             this.labelInputUserControl.Name = "labelInputUserControl";
             this.labelInputUserControl.Size = new System.Drawing.Size(0, 28);
@@ -85,6 +85,7 @@
             this.rbMinuscule.TabStop = true;
             this.rbMinuscule.Text = "Minuscules";
             this.rbMinuscule.UseVisualStyleBackColor = true;
+            this.rbMinuscule.CheckedChanged += new System.EventHandler(this.RbCasseSelect);
             // 
             // rbMajuscule
             // 
@@ -123,6 +124,7 @@
             this.rbCaractereRouge.TabStop = true;
             this.rbCaractereRouge.Text = "Rouge";
             this.rbCaractereRouge.UseVisualStyleBackColor = true;
+            this.rbCaractereRouge.CheckedChanged += new System.EventHandler(this.RbCaractereSelect);
             // 
             // rbCaractereBlanc
             // 
@@ -135,6 +137,7 @@
             this.rbCaractereBlanc.TabStop = true;
             this.rbCaractereBlanc.Text = "Blanc";
             this.rbCaractereBlanc.UseVisualStyleBackColor = true;
+            this.rbCaractereBlanc.CheckedChanged += new System.EventHandler(this.RbCaractereSelect);
             // 
             // rbCaractereNoir
             // 
@@ -147,6 +150,7 @@
             this.rbCaractereNoir.TabStop = true;
             this.rbCaractereNoir.Text = "Noir";
             this.rbCaractereNoir.UseVisualStyleBackColor = true;
+            this.rbCaractereNoir.CheckedChanged += new System.EventHandler(this.RbCaractereSelect);
             // 
             // gbChoix
             // 
@@ -233,7 +237,7 @@
             this.rbFondRouge.TabStop = true;
             this.rbFondRouge.Text = "Rouge";
             this.rbFondRouge.UseVisualStyleBackColor = true;
-            this.rbFondRouge.CheckedChanged += new System.EventHandler(this.RadioBoxSelect);
+            this.rbFondRouge.CheckedChanged += new System.EventHandler(this.RbFondSelect);
             // 
             // rbFondVert
             // 
@@ -246,6 +250,7 @@
             this.rbFondVert.TabStop = true;
             this.rbFondVert.Text = "Vert";
             this.rbFondVert.UseVisualStyleBackColor = true;
+            this.rbFondVert.CheckedChanged += new System.EventHandler(this.RbFondSelect);
             // 
             // rbFondBleu
             // 
@@ -258,6 +263,7 @@
             this.rbFondBleu.TabStop = true;
             this.rbFondBleu.Text = "Bleu";
             this.rbFondBleu.UseVisualStyleBackColor = true;
+            this.rbFondBleu.CheckedChanged += new System.EventHandler(this.RbFondSelect);
             // 
             // Form1
             // 
