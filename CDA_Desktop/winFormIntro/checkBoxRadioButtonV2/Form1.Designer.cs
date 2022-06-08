@@ -233,7 +233,7 @@
             this.rbFondRouge.TabStop = true;
             this.rbFondRouge.Text = "Rouge";
             this.rbFondRouge.UseVisualStyleBackColor = true;
-            this.rbFondRouge.CheckedChanged += new System.EventHandler(this.CbCheckChanged);
+            this.rbFondRouge.CheckedChanged += new System.EventHandler(this.RadioBoxSelect);
             // 
             // rbFondVert
             // 

@@ -18,8 +18,9 @@ namespace checkBoxRadioButtonV2
             cbCasse.Tag = bgCasse;
 
             //gestion du de couleur de la couleur de fond du label
-
-
+            rbFondBleu.Tag = Color.Blue;
+            rbFondRouge.Tag = Color.Blue;
+            rbFondVert.Tag = Color.Vert;
 
         }
 
@@ -43,9 +44,11 @@ namespace checkBoxRadioButtonV2
             myGroupBox.Visible = myCheckBox.Checked;
         }
 
-        private void CbCheckChanged(object sender, EventArgs e)
+        private void RadioBoxSelect(object sender, EventArgs e)
         {
-
+            RadioButton myRadioButton = (RadioButton)sender;
+            Label myLabel = (Label)myRadioButton.Tag;
+            myLabel.BackColor = myRadioButton.Checked;
         }
     }
 
