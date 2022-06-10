@@ -18,7 +18,7 @@ namespace libValidationSaisie
 
         public bool IsValid()
         {
-            if(DateFutureValidate() && DateFormatValidate())
+            if(DateFutureValidate() && DateTimetValidate())
             {
                 return true;    
             } else

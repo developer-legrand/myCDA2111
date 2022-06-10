@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "checkBoxRadioButton", "chec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "checkBoxRadioButtonV2", "checkBoxRadioButtonV2\checkBoxRadioButtonV2.csproj", "{04645BB4-FE0C-4E11-85F2-C4FD37A07AC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "listBox", "listBox\listBox.csproj", "{1755DF7F-8F56-4519-AE4F-E8966F261D89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{04645BB4-FE0C-4E11-85F2-C4FD37A07AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04645BB4-FE0C-4E11-85F2-C4FD37A07AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04645BB4-FE0C-4E11-85F2-C4FD37A07AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1755DF7F-8F56-4519-AE4F-E8966F261D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1755DF7F-8F56-4519-AE4F-E8966F261D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1755DF7F-8F56-4519-AE4F-E8966F261D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1755DF7F-8F56-4519-AE4F-E8966F261D89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationSaisieFormulaire", "ValidationSaisieFormulaire.csproj", "{490A0CF8-3699-49FF-844B-B8442E5D86C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationSaisie", "ValidationSaisie.csproj", "{490A0CF8-3699-49FF-844B-B8442E5D86C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libValidationSaisie", "..\libValidationSaisie\libValidationSaisie.csproj", "{E470CF64-AF3E-4380-8936-CB115A7582E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{490A0CF8-3699-49FF-844B-B8442E5D86C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{490A0CF8-3699-49FF-844B-B8442E5D86C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{490A0CF8-3699-49FF-844B-B8442E5D86C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E470CF64-AF3E-4380-8936-CB115A7582E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E470CF64-AF3E-4380-8936-CB115A7582E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E470CF64-AF3E-4380-8936-CB115A7582E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E470CF64-AF3E-4380-8936-CB115A7582E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

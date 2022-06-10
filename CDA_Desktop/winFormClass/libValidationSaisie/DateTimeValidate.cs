@@ -6,14 +6,7 @@ using System.Threading.Tasks;
 
 namespace libValidationSaisie
 {
-    internal class DateValidate
+    internal class DateTimeValidate
     {
-        private DateTime convertDate;
-        public DateValidate()
-        {
-
-        }
-
-
     }
 }
