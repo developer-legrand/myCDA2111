@@ -2,8 +2,7 @@
 namespace checkBoxRadioButtonV2
 {
     public partial class Form1 : Form
-    {
-        
+    { 
         public Form1()
         {
             InitializeComponent();
@@ -28,14 +27,23 @@ namespace checkBoxRadioButtonV2
         private void TbInputUser_TextChanged(object sender, EventArgs e)
         {
             labelInputUserControl.Text = tbInputUser.Text;
-            if (!String.IsNullOrEmpty(labelInputUserControl.Text))
+            if (rbMinuscule.Checked)
+            {
+                labelInputUserControl.Text = tbInputUser.Text.ToLower();
+            }
+            if (rbMajuscule.Checked)
+            {
+                labelInputUserControl.Text = tbInputUser.Text.ToUpper();
+            }
+            /* if (!String.IsNullOrEmpty(labelInputUserControl.Text))
             {
                 gbChoix.Enabled = true;
             }
             else
             {
                 gbChoix.Enabled = false;
-            }
+            }*/
+            gbChoix.Enabled = (!string.IsNullOrEmpty(labelInputUserControl.Text)) ? true : false;
         }
 
         private void CheckBoxSelect(object sender, EventArgs e)
@@ -43,6 +51,26 @@ namespace checkBoxRadioButtonV2
             CheckBox myCheckBox = (CheckBox)sender;
             GroupBox myGroupBox = (GroupBox)myCheckBox.Tag;
             myGroupBox.Visible = myCheckBox.Checked;
+            if (!bgCaractere.Visible)
+            {
+                rbCaractereRouge.Checked = false;
+                rbCaractereBlanc.Checked = false;
+                rbCaractereNoir.Checked = false;
+                labelInputUserControl.ForeColor = Color.Empty;
+            }
+            if (!bgFond.Visible)
+            {
+                rbFondRouge.Checked = false;
+                rbFondBleu.Checked = false;
+                rbFondVert.Checked = false;
+                labelInputUserControl.BackColor = Color.Empty;
+            }
+            if (!bgCasse.Visible)
+            {
+                rbMajuscule.Checked = false;
+                rbMinuscule.Checked = false;
+                labelInputUserControl.Text = tbInputUser.Text;
+            }
         }
 
         private void RbFondSelect(object sender, EventArgs e)
@@ -59,10 +87,10 @@ namespace checkBoxRadioButtonV2
 
         private void RbCasseSelect(object sender, EventArgs e)
         {
+            RadioButton myRadioButton = (RadioButton)sender;
             //gestion de la casse du texte du label
             rbMajuscule.Tag = tbInputUser.Text.ToUpper();
             rbMinuscule.Tag = tbInputUser.Text.ToLower();
-            RadioButton myRadioButton = (RadioButton)sender;
             labelInputUserControl.Text = (string)myRadioButton.Tag;
         }
     }    

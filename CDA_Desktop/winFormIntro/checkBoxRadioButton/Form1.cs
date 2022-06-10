@@ -111,11 +111,14 @@ namespace checkBoxRadioButton
 
         private void rbCaractereNoir_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbCaractereNoir.Checked)
+            /*if (rbCaractereNoir.Checked)
             {
                 labelInputUserControl.ForeColor = Color.Black;
             }
-            else labelInputUserControl.ForeColor = labelCaptive;  
+            else labelInputUserControl.ForeColor = labelCaptive;*/
+
+            labelInputUserControl.ForeColor = 
+                rbCaractereNoir.Checked ? Color.Black : labelCaptive;
         }
 
         private void rbMinuscule_CheckedChanged(object sender, EventArgs e)
