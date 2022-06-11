@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "libValidationSaisie/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/libValidationSaisie.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/libValidationSaisie.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "libValidationSaisie/1.0.0": {
+      "type": "project",
+      "path": "../libValidationSaisie/libValidationSaisie.csproj",
+      "msbuildProject": "../libValidationSaisie/libValidationSaisie.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "libValidationSaisie >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\33783\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormClass\\libValidationSaisie\\libValidationSaisie.csproj": {
+              "projectPath": "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormClass\\libValidationSaisie\\libValidationSaisie.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

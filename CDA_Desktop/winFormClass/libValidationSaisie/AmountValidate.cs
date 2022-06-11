@@ -8,5 +8,6 @@ namespace libValidationSaisie
 {
     internal class AmountValidate
     {
+        //Amount validate class
     }
 }
