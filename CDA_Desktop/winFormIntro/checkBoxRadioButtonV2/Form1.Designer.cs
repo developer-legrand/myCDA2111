@@ -55,7 +55,7 @@
             // 
             this.labelInputUserControl.AutoSize = true;
             this.labelInputUserControl.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelInputUserControl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelInputUserControl.ForeColor = System.Drawing.Color.Coral;
             this.labelInputUserControl.Location = new System.Drawing.Point(40, 173);
             this.labelInputUserControl.Name = "labelInputUserControl";
             this.labelInputUserControl.Size = new System.Drawing.Size(0, 28);

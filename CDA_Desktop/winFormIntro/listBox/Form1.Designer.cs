@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.lstBoxElement = new System.Windows.Forms.ListBox();
             this.tbInputUser = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbIndexElement = new System.Windows.Forms.TextBox();
+            this.btnSelectionner = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,16 +40,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbItemCount = new System.Windows.Forms.TextBox();
+            this.tbSelectedIndex = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
-            // 
-            // errorProvider
-            // 
-            this.errorProvider.ContainerControl = this;
             // 
             // lstBoxElement
             // 
@@ -61,6 +54,7 @@
             this.lstBoxElement.Name = "lstBoxElement";
             this.lstBoxElement.Size = new System.Drawing.Size(149, 184);
             this.lstBoxElement.TabIndex = 0;
+            this.lstBoxElement.SelectedIndexChanged += new System.EventHandler(this.lstBoxElement_SelectedIndexChanged);
             // 
             // tbInputUser
             // 
@@ -69,21 +63,22 @@
             this.tbInputUser.Size = new System.Drawing.Size(149, 23);
             this.tbInputUser.TabIndex = 1;
             // 
-            // textBox2
+            // tbIndexElement
             // 
-            this.textBox2.Location = new System.Drawing.Point(268, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(66, 23);
-            this.textBox2.TabIndex = 2;
+            this.tbIndexElement.Location = new System.Drawing.Point(268, 68);
+            this.tbIndexElement.Name = "tbIndexElement";
+            this.tbIndexElement.Size = new System.Drawing.Size(66, 23);
+            this.tbIndexElement.TabIndex = 2;
             // 
-            // button1
+            // btnSelectionner
             // 
-            this.button1.Location = new System.Drawing.Point(347, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Sélectionner";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSelectionner.Location = new System.Drawing.Point(347, 68);
+            this.btnSelectionner.Name = "btnSelectionner";
+            this.btnSelectionner.Size = new System.Drawing.Size(143, 23);
+            this.btnSelectionner.TabIndex = 3;
+            this.btnSelectionner.Text = "Sélectionner";
+            this.btnSelectionner.UseVisualStyleBackColor = true;
+            this.btnSelectionner.Click += new System.EventHandler(this.btnSelectionner_Click);
             // 
             // button2
             // 
@@ -93,6 +88,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Vider la Liste";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnVider_Click);
             // 
             // label1
             // 
@@ -165,29 +161,29 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Text";
             // 
-            // textBox3
+            // tbItemCount
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(347, 173);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(44, 23);
-            this.textBox3.TabIndex = 12;
+            this.tbItemCount.Enabled = false;
+            this.tbItemCount.Location = new System.Drawing.Point(347, 173);
+            this.tbItemCount.Name = "tbItemCount";
+            this.tbItemCount.Size = new System.Drawing.Size(44, 23);
+            this.tbItemCount.TabIndex = 12;
             // 
-            // textBox4
+            // tbSelectedIndex
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(347, 201);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(44, 23);
-            this.textBox4.TabIndex = 13;
+            this.tbSelectedIndex.Enabled = false;
+            this.tbSelectedIndex.Location = new System.Drawing.Point(347, 201);
+            this.tbSelectedIndex.Name = "tbSelectedIndex";
+            this.tbSelectedIndex.Size = new System.Drawing.Size(44, 23);
+            this.tbSelectedIndex.TabIndex = 13;
             // 
-            // textBox5
+            // tbName
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(347, 232);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 14;
+            this.tbName.Enabled = false;
+            this.tbName.Location = new System.Drawing.Point(347, 232);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(100, 23);
+            this.tbName.TabIndex = 14;
             // 
             // button3
             // 
@@ -197,7 +193,7 @@
             this.button3.TabIndex = 15;
             this.button3.Text = "Ajout Liste";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.btnAjout_Click);
             // 
             // Form1
             // 
@@ -205,9 +201,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.tbSelectedIndex);
+            this.Controls.Add(this.tbItemCount);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -216,22 +212,19 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnSelectionner);
+            this.Controls.Add(this.tbIndexElement);
             this.Controls.Add(this.tbInputUser);
             this.Controls.Add(this.lstBoxElement);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private ErrorProvider errorProvider;
         private Label label7;
         private Label label6;
         private Label label5;
@@ -240,13 +233,13 @@
         private Label label2;
         private Label label1;
         private Button button2;
-        private Button button1;
-        private TextBox textBox2;
+        private Button btnSelectionner;
+        private TextBox tbIndexElement;
         private TextBox tbInputUser;
         private ListBox lstBoxElement;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private TextBox tbName;
+        private TextBox tbSelectedIndex;
+        private TextBox tbItemCount;
         private Button button3;
     }
 }

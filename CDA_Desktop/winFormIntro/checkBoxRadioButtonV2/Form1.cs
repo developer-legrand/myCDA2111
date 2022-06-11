@@ -51,25 +51,33 @@ namespace checkBoxRadioButtonV2
             CheckBox myCheckBox = (CheckBox)sender;
             GroupBox myGroupBox = (GroupBox)myCheckBox.Tag;
             myGroupBox.Visible = myCheckBox.Checked;
-            if (!bgCaractere.Visible)
+            /*            if (!bgCaractere.Visible)
+                        {
+                            rbCaractereRouge.Checked = false;
+                            rbCaractereBlanc.Checked = false;
+                            rbCaractereNoir.Checked = false;
+                            labelInputUserControl.ForeColor = Color.Empty;
+                        }
+                        if (!bgFond.Visible)
+                        {
+                            rbFondRouge.Checked = false;
+                            rbFondBleu.Checked = false;
+                            rbFondVert.Checked = false;
+                            labelInputUserControl.BackColor = Color.Empty;
+                        }
+                        if (!bgCasse.Visible)
+                        {
+                            rbMajuscule.Checked = false;
+                            rbMinuscule.Checked = false;
+                            labelInputUserControl.Text = tbInputUser.Text;
+                        }*/
+         foreach(RadioButton radioButton in myGroupBox.Controls)
             {
-                rbCaractereRouge.Checked = false;
-                rbCaractereBlanc.Checked = false;
-                rbCaractereNoir.Checked = false;
-                labelInputUserControl.ForeColor = Color.Empty;
-            }
-            if (!bgFond.Visible)
-            {
-                rbFondRouge.Checked = false;
-                rbFondBleu.Checked = false;
-                rbFondVert.Checked = false;
-                labelInputUserControl.BackColor = Color.Empty;
-            }
-            if (!bgCasse.Visible)
-            {
-                rbMajuscule.Checked = false;
-                rbMinuscule.Checked = false;
-                labelInputUserControl.Text = tbInputUser.Text;
+                if(!myGroupBox.Visible)
+                    radioButton.Checked = false;
+                if(!bgFond.Visible) labelInputUserControl.BackColor = Color.Empty;
+                if(!bgCaractere.Visible) labelInputUserControl.ForeColor = Color.Empty;
+                if(!bgCasse.Visible) labelInputUserControl.Text = tbInputUser.Text;
             }
         }
 
