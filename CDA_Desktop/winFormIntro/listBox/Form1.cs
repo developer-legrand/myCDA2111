@@ -10,6 +10,9 @@ namespace listBox
         string resultName;
         ErrorProvider errorProvider;
         Regex rgInputUser;
+        int lstBoxLength;
+        int index;
+        bool inputUserBool;
 
         public Form1()
         {
@@ -19,7 +22,7 @@ namespace listBox
         {
             pattern = @"^[a-zA-Z]+[-]?[a-zA-Z]+$";
             rgInputUser = new Regex(pattern);
-            errorProvider = new ErrorProvider(); 
+            errorProvider = new ErrorProvider();
         }
         private void btnAjout_Click(object sender, EventArgs e)
         {
@@ -28,12 +31,14 @@ namespace listBox
             if(resultName.Equals("EMPTY"))
             {
                 errorProvider.SetError(tbInputUser, "le champs ne peut être vide");
-               /* MessageBox.Show(errorProvider.GetError(tbInputUser));*/
+                /* MessageBox.Show(errorProvider.GetError(tbInputUser));*/
+                tbInputUser.Focus();
             }
             else if(resultName.Equals("FORMAT"))
             {
                 errorProvider.SetError(tbInputUser, "seul les caractères alphabétiques, \"-\"  sont acceptés");
                 /*MessageBox.Show(errorProvider.GetError(tbInputUser));*/
+                tbInputUser.Focus();
                 tbInputUser.Text = String.Empty;
             }
             else
@@ -74,14 +79,14 @@ namespace listBox
             }
             else if (resultIndex.Equals("NOEXIST"))
             {
-                
                 errorProvider.SetError(btnSelectionner, "l'index n'existe pas");
                 tbIndexElement.Text = String.Empty;
             }
             else
             {
-                MessageBox.Show("toto n'a pas encore impléméenté ce code");           
-                tbSelectedIndex.Text = tbIndexElement.Text;
+                index = int.Parse(tbIndexElement.Text);
+                tbName.Text = lstBoxElement.Items[index].ToString();
+                tbSelectedIndex.Text = tbIndexElement.Text.ToString();
             }
         }
         private string isInputUserValid(string _inputUser)
@@ -102,8 +107,9 @@ namespace listBox
 
         private string isIndexElementValid(string _inputUser)
         {
-            int dzzdd = 
-            bool inputUserBool = int.TryParse(_inputUser, out _); 
+            
+            lstBoxLength = lstBoxElement.Items.Count;
+            inputUserBool = int.TryParse(_inputUser, out _); 
             if (_inputUser == String.Empty)
             {
                 return "EMPTY";
@@ -112,7 +118,8 @@ namespace listBox
             {
                 return "FORMAT";
             }
-            if (lstBoxElement.Items[int.Parse(_inputUser)] == -1)
+            index = int.Parse(_inputUser);
+            if (index > (lstBoxLength -1))
             {
                 return "NOEXIST";
             }
