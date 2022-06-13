@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\WinFormLearning.csproj": {}
+    "C:\\Users\\cyril\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\WinFormLearning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\WinFormLearning.csproj": {
+    "C:\\Users\\cyril\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\WinFormLearning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\WinFormLearning.csproj",
+        "projectUniqueName": "C:\\Users\\cyril\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\WinFormLearning.csproj",
         "projectName": "WinFormLearning",
-        "projectPath": "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\WinFormLearning.csproj",
-        "packagesPath": "C:\\Users\\33783\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\obj\\",
+        "projectPath": "C:\\Users\\cyril\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\WinFormLearning.csproj",
+        "packagesPath": "C:\\Users\\cyril\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cyril\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\WinFormLearning\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\33783\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cyril\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
