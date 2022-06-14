@@ -30,22 +30,20 @@
         {
             this.btnDown = new System.Windows.Forms.Button();
             this.btnUp = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnRemoveAll = new System.Windows.Forms.Button();
+            this.btnRemoveOne = new System.Windows.Forms.Button();
+            this.btnSelectAll = new System.Windows.Forms.Button();
+            this.btnSelectOne = new System.Windows.Forms.Button();
+            this.cbxDataMain = new System.Windows.Forms.ComboBox();
+            this.lstDataTarget = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnDown
             // 
             this.btnDown.Font = new System.Drawing.Font("Webdings", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDown.Location = new System.Drawing.Point(651, 308);
+            this.btnDown.Location = new System.Drawing.Point(459, 255);
             this.btnDown.Name = "btnDown";
-            this.btnDown.Size = new System.Drawing.Size(66, 46);
+            this.btnDown.Size = new System.Drawing.Size(40, 40);
             this.btnDown.TabIndex = 15;
             this.btnDown.Text = "6";
             this.btnDown.UseVisualStyleBackColor = true;
@@ -54,108 +52,88 @@
             // btnUp
             // 
             this.btnUp.Font = new System.Drawing.Font("Webdings", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUp.Location = new System.Drawing.Point(505, 308);
+            this.btnUp.Location = new System.Drawing.Point(459, 212);
             this.btnUp.Name = "btnUp";
-            this.btnUp.Size = new System.Drawing.Size(66, 46);
+            this.btnUp.Size = new System.Drawing.Size(40, 40);
             this.btnUp.TabIndex = 14;
             this.btnUp.Text = "5";
             this.btnUp.UseVisualStyleBackColor = true;
             this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
             // 
-            // button4
+            // btnRemoveAll
             // 
-            this.button4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(354, 272);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "<<";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnRemoveAll.Font = new System.Drawing.Font("Webdings", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRemoveAll.Location = new System.Drawing.Point(348, 152);
+            this.btnRemoveAll.Name = "btnRemoveAll";
+            this.btnRemoveAll.Size = new System.Drawing.Size(50, 50);
+            this.btnRemoveAll.TabIndex = 13;
+            this.btnRemoveAll.Text = "7";
+            this.btnRemoveAll.UseVisualStyleBackColor = true;
+            this.btnRemoveAll.Click += new System.EventHandler(this.btnRemoveAll_Click);
             // 
-            // button3
+            // btnRemoveOne
             // 
-            this.button3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(354, 243);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "<";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnRemoveOne.Font = new System.Drawing.Font("Webdings", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRemoveOne.Location = new System.Drawing.Point(348, 96);
+            this.btnRemoveOne.Name = "btnRemoveOne";
+            this.btnRemoveOne.Size = new System.Drawing.Size(50, 50);
+            this.btnRemoveOne.TabIndex = 12;
+            this.btnRemoveOne.Text = "3";
+            this.btnRemoveOne.UseVisualStyleBackColor = true;
+            this.btnRemoveOne.Click += new System.EventHandler(this.btnRemoveOne_Click);
             // 
-            // button2
+            // btnSelectAll
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(354, 125);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = ">>";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnSelectAll.Font = new System.Drawing.Font("Webdings", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSelectAll.Location = new System.Drawing.Point(404, 152);
+            this.btnSelectAll.Name = "btnSelectAll";
+            this.btnSelectAll.Size = new System.Drawing.Size(50, 50);
+            this.btnSelectAll.TabIndex = 11;
+            this.btnSelectAll.Text = "8";
+            this.btnSelectAll.UseVisualStyleBackColor = true;
+            this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
             // 
-            // button1
+            // btnSelectOne
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(354, 96);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = ">";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSelectOne.Font = new System.Drawing.Font("Webdings", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSelectOne.Location = new System.Drawing.Point(404, 96);
+            this.btnSelectOne.Name = "btnSelectOne";
+            this.btnSelectOne.Size = new System.Drawing.Size(50, 50);
+            this.btnSelectOne.TabIndex = 10;
+            this.btnSelectOne.Text = "4";
+            this.btnSelectOne.UseVisualStyleBackColor = true;
+            this.btnSelectOne.Click += new System.EventHandler(this.btnSelectOne_Click);
             // 
-            // comboBox1
+            // cbxDataMain
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(84, 96);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 23);
-            this.comboBox1.TabIndex = 9;
+            this.cbxDataMain.FormattingEnabled = true;
+            this.cbxDataMain.Location = new System.Drawing.Point(80, 96);
+            this.cbxDataMain.Name = "cbxDataMain";
+            this.cbxDataMain.Size = new System.Drawing.Size(212, 23);
+            this.cbxDataMain.TabIndex = 9;
             // 
-            // listBox1
+            // lstDataTarget
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(505, 96);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(212, 199);
-            this.listBox1.TabIndex = 8;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(69, 201);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(69, 156);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.lstDataTarget.FormattingEnabled = true;
+            this.lstDataTarget.ItemHeight = 15;
+            this.lstDataTarget.Location = new System.Drawing.Point(505, 96);
+            this.lstDataTarget.Name = "lstDataTarget";
+            this.lstDataTarget.Size = new System.Drawing.Size(212, 199);
+            this.lstDataTarget.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnUp);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnRemoveAll);
+            this.Controls.Add(this.btnRemoveOne);
+            this.Controls.Add(this.btnSelectAll);
+            this.Controls.Add(this.btnSelectOne);
+            this.Controls.Add(this.cbxDataMain);
+            this.Controls.Add(this.lstDataTarget);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -167,13 +145,11 @@
 
         private Button btnDown;
         private Button btnUp;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private ComboBox comboBox1;
-        private ListBox listBox1;
-        private Button button5;
-        private Button button6;
+        private Button btnRemoveAll;
+        private Button btnRemoveOne;
+        private Button btnSelectAll;
+        private Button btnSelectOne;
+        private ComboBox cbxDataMain;
+        private ListBox lstDataTarget;
     }
 }
