@@ -2,7 +2,6 @@ namespace ColorHex
 {
     public partial class Form1 : Form
     {
-
         int redColor;
         int greenColor;
         int blueColor;
@@ -14,9 +13,7 @@ namespace ColorHex
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            redColor = (int)numRedText.Value;
-            greenColor = (int)numGreenText.Value;
-            blueColor = (int)numBlueText.Value;
+            
         }
 
         private void Scroll_Changed(object sender, ScrollEventArgs e)
@@ -28,18 +25,14 @@ namespace ColorHex
 
         private void numColorText_Changed(object sender, EventArgs e)
         {
+            redColor = (int)numRedText.Value;
+            greenColor = (int)numGreenText.Value;
+            blueColor = (int)numBlueText.Value;
             hsbBlue.Value = blueColor;
             hsbGreen.Value = greenColor;
             hsbRed.Value = redColor;
-        }
-
-        private void lblColorSelect_BackColorChanged(object sender, EventArgs e)
-        {
-           
-            Color lblColor = Color.FromArgb(Convert.ToByte(redColor), Convert.ToByte(greenColor), Convert.ToByte(blueColor));
+            Color lblColor = Color.FromArgb(redColor, greenColor, blueColor);
             lblColorSelect.BackColor = lblColor;
-        }
-
-        
+        } 
     }
 }

@@ -49,7 +49,7 @@
             // hsbRed
             // 
             this.hsbRed.Location = new System.Drawing.Point(166, 91);
-            this.hsbRed.Maximum = 255;
+            this.hsbRed.Maximum = 264;
             this.hsbRed.Name = "hsbRed";
             this.hsbRed.Size = new System.Drawing.Size(289, 17);
             this.hsbRed.TabIndex = 0;
@@ -67,7 +67,7 @@
             // hsbGreen
             // 
             this.hsbGreen.Location = new System.Drawing.Point(166, 129);
-            this.hsbGreen.Maximum = 255;
+            this.hsbGreen.Maximum = 264;
             this.hsbGreen.Name = "hsbGreen";
             this.hsbGreen.Size = new System.Drawing.Size(289, 17);
             this.hsbGreen.TabIndex = 2;
@@ -143,11 +143,10 @@
             // 
             this.lblColorSelect.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblColorSelect.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblColorSelect.Location = new System.Drawing.Point(166, 273);
+            this.lblColorSelect.Location = new System.Drawing.Point(82, 214);
             this.lblColorSelect.Name = "lblColorSelect";
-            this.lblColorSelect.Size = new System.Drawing.Size(408, 89);
+            this.lblColorSelect.Size = new System.Drawing.Size(511, 47);
             this.lblColorSelect.TabIndex = 9;
-            this.lblColorSelect.BackColorChanged += new System.EventHandler(this.lblColorSelect_BackColorChanged);
             // 
             // label1
             // 
@@ -177,7 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 281);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
