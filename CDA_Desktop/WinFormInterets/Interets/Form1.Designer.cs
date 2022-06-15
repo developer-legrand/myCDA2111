@@ -192,6 +192,7 @@
             this.lstPeriodicity.Name = "lstPeriodicity";
             this.lstPeriodicity.Size = new System.Drawing.Size(163, 79);
             this.lstPeriodicity.TabIndex = 12;
+            this.lstPeriodicity.SelectedIndexChanged += new System.EventHandler(this.lstPeriodicity_SelectedIndexChanged);
             // 
             // btnOk
             // 
