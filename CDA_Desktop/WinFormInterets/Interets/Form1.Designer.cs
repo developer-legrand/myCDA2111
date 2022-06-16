@@ -10,7 +10,7 @@
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param Name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -41,7 +41,7 @@
             this.rbtnSeven = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblResultAmount = new System.Windows.Forms.Label();
             this.lstPeriodicity = new System.Windows.Forms.ListBox();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -175,14 +175,14 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "label6";
             // 
-            // label7
+            // lblResultAmount
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(670, 275);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 15);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "label7";
+            this.lblResultAmount.AutoSize = true;
+            this.lblResultAmount.Location = new System.Drawing.Point(670, 275);
+            this.lblResultAmount.Name = "lblResultAmount";
+            this.lblResultAmount.Size = new System.Drawing.Size(38, 15);
+            this.lblResultAmount.TabIndex = 11;
+            this.lblResultAmount.Text = "label7";
             // 
             // lstPeriodicity
             // 
@@ -202,6 +202,7 @@
             this.btnOk.TabIndex = 13;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
@@ -230,7 +231,7 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.lstPeriodicity);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblResultAmount);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
@@ -266,7 +267,7 @@
         private RadioButton rbtnSeven;
         private Label label5;
         private Label label6;
-        private Label label7;
+        private Label lblResultAmount;
         private ListBox lstPeriodicity;
         private Button btnOk;
         private Button btnCancel;
