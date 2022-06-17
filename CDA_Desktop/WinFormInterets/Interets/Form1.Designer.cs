@@ -89,7 +89,6 @@
             this.hsbDurationMonth.LargeChange = 1;
             this.hsbDurationMonth.Location = new System.Drawing.Point(239, 150);
             this.hsbDurationMonth.Maximum = 309;
-            this.hsbDurationMonth.Minimum = 1;
             this.hsbDurationMonth.Name = "hsbDurationMonth";
             this.hsbDurationMonth.Size = new System.Drawing.Size(163, 18);
             this.hsbDurationMonth.TabIndex = 4;
