@@ -35,18 +35,18 @@
             this.hsbDurationMonth = new System.Windows.Forms.HScrollBar();
             this.txtBoxName = new System.Windows.Forms.TextBox();
             this.txtBoxLoan = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpBoxInterestRate = new System.Windows.Forms.GroupBox();
             this.rbtnNine = new System.Windows.Forms.RadioButton();
             this.rbtnEight = new System.Windows.Forms.RadioButton();
             this.rbtnSeven = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblNumberOfPayment = new System.Windows.Forms.Label();
             this.lblResultAmount = new System.Windows.Forms.Label();
             this.lstPeriodicity = new System.Windows.Forms.ListBox();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblDurationMonth = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.grpBoxInterestRate.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -110,17 +110,17 @@
             this.txtBoxLoan.Size = new System.Drawing.Size(163, 23);
             this.txtBoxLoan.TabIndex = 6;
             // 
-            // groupBox1
+            // grpBoxInterestRate
             // 
-            this.groupBox1.Controls.Add(this.rbtnNine);
-            this.groupBox1.Controls.Add(this.rbtnEight);
-            this.groupBox1.Controls.Add(this.rbtnSeven);
-            this.groupBox1.Location = new System.Drawing.Point(461, 48);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(176, 136);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Taux d\'interêts";
+            this.grpBoxInterestRate.Controls.Add(this.rbtnNine);
+            this.grpBoxInterestRate.Controls.Add(this.rbtnEight);
+            this.grpBoxInterestRate.Controls.Add(this.rbtnSeven);
+            this.grpBoxInterestRate.Location = new System.Drawing.Point(461, 48);
+            this.grpBoxInterestRate.Name = "grpBoxInterestRate";
+            this.grpBoxInterestRate.Size = new System.Drawing.Size(176, 136);
+            this.grpBoxInterestRate.TabIndex = 7;
+            this.grpBoxInterestRate.TabStop = false;
+            this.grpBoxInterestRate.Text = "Taux d\'interêts";
             // 
             // rbtnNine
             // 
@@ -132,6 +132,7 @@
             this.rbtnNine.TabStop = true;
             this.rbtnNine.Text = "9%";
             this.rbtnNine.UseVisualStyleBackColor = true;
+            this.rbtnNine.CheckedChanged += new System.EventHandler(this.rbtnInterestRate_Checked);
             // 
             // rbtnEight
             // 
@@ -143,6 +144,7 @@
             this.rbtnEight.TabStop = true;
             this.rbtnEight.Text = "8%";
             this.rbtnEight.UseVisualStyleBackColor = true;
+            this.rbtnEight.CheckedChanged += new System.EventHandler(this.rbtnInterestRate_Checked);
             // 
             // rbtnSeven
             // 
@@ -154,6 +156,7 @@
             this.rbtnSeven.TabStop = true;
             this.rbtnSeven.Text = "7%";
             this.rbtnSeven.UseVisualStyleBackColor = true;
+            this.rbtnSeven.CheckedChanged += new System.EventHandler(this.rbtnInterestRate_Checked);
             // 
             // label5
             // 
@@ -165,14 +168,15 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Remboursements";
             // 
-            // label6
+            // lblNumberOfPayment
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(417, 275);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 15);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "label6";
+            this.lblNumberOfPayment.AutoSize = true;
+            this.lblNumberOfPayment.Location = new System.Drawing.Point(417, 275);
+            this.lblNumberOfPayment.Name = "lblNumberOfPayment";
+            this.lblNumberOfPayment.Size = new System.Drawing.Size(38, 15);
+            this.lblNumberOfPayment.TabIndex = 10;
+            this.lblNumberOfPayment.Text = "label6";
+            this.lblNumberOfPayment.Visible = false;
             // 
             // lblResultAmount
             // 
@@ -182,6 +186,7 @@
             this.lblResultAmount.Size = new System.Drawing.Size(38, 15);
             this.lblResultAmount.TabIndex = 11;
             this.lblResultAmount.Text = "label7";
+            this.lblResultAmount.Visible = false;
             // 
             // lstPeriodicity
             // 
@@ -231,9 +236,9 @@
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.lstPeriodicity);
             this.Controls.Add(this.lblResultAmount);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblNumberOfPayment);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpBoxInterestRate);
             this.Controls.Add(this.txtBoxLoan);
             this.Controls.Add(this.txtBoxName);
             this.Controls.Add(this.hsbDurationMonth);
@@ -244,8 +249,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpBoxInterestRate.ResumeLayout(false);
+            this.grpBoxInterestRate.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,12 +265,12 @@
         private HScrollBar hsbDurationMonth;
         private TextBox txtBoxName;
         private TextBox txtBoxLoan;
-        private GroupBox groupBox1;
+        private GroupBox grpBoxInterestRate;
         private RadioButton rbtnNine;
         private RadioButton rbtnEight;
         private RadioButton rbtnSeven;
         private Label label5;
-        private Label label6;
+        private Label lblNumberOfPayment;
         private Label lblResultAmount;
         private ListBox lstPeriodicity;
         private Button btnOk;

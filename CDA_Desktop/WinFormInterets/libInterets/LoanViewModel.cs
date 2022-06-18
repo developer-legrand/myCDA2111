@@ -1,41 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace libInterets
 {
-    internal class LoanViewModel
+    public class LoanViewModel
     {
 
-        Loan loan;
+        public Loan loan;
         Regex regexEmpty = new Regex("");
-        Regex regexFormat = new Regex(@"^[a-zA-Z]+[-]?[a-zA-Z]+$");
-
+        Regex regexFormat = new Regex(@"toto");
+        /*new Regex(@"^[a-zA-Z]+[-]?[a-zA-Z]+$");*/
         public LoanViewModel(Loan loan)
         {
             this.loan = loan;  
         }
 
-       public bool isNameValid(string _name)
+       public bool IsNameValid(string _name)
         {
             _name = loan.Name;
-            if (regexEmpty.IsMatch(_name) || regexFormat.IsMatch(_name))
+            if (regexEmpty.IsMatch("") || regexFormat.IsMatch(_name))
             {
                 return true;
-            }else return false;
+            }
+            else return false;
         }
-        public bool isLoanSumValid(string _loanSum)
+        public bool IsLoanSumValid(string _loanSum)
         { 
             bool isLoanSumInt = int.TryParse(_loanSum,out int test);
         
             if (isLoanSumInt)
             {
                 loan.LoanSum = test;
+                return isLoanSumInt;
             }
-            return isLoanSumInt;
+            else return false;
         }
     }
 }
