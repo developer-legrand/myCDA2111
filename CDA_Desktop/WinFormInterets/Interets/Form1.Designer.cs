@@ -39,7 +39,7 @@
             this.rbtnNine = new System.Windows.Forms.RadioButton();
             this.rbtnEight = new System.Windows.Forms.RadioButton();
             this.rbtnSeven = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblReimbbursement = new System.Windows.Forms.Label();
             this.lblNumberOfPayment = new System.Windows.Forms.Label();
             this.lblResultAmount = new System.Windows.Forms.Label();
             this.lstPeriodicity = new System.Windows.Forms.ListBox();
@@ -132,7 +132,7 @@
             this.rbtnNine.TabStop = true;
             this.rbtnNine.Text = "9%";
             this.rbtnNine.UseVisualStyleBackColor = true;
-            this.rbtnNine.CheckedChanged += new System.EventHandler(this.rbtnInterestRate_Checked);
+            this.rbtnNine.CheckedChanged += new System.EventHandler(this.RbtnInterestRate_Checked);
             // 
             // rbtnEight
             // 
@@ -144,7 +144,7 @@
             this.rbtnEight.TabStop = true;
             this.rbtnEight.Text = "8%";
             this.rbtnEight.UseVisualStyleBackColor = true;
-            this.rbtnEight.CheckedChanged += new System.EventHandler(this.rbtnInterestRate_Checked);
+            this.rbtnEight.CheckedChanged += new System.EventHandler(this.RbtnInterestRate_Checked);
             // 
             // rbtnSeven
             // 
@@ -156,17 +156,17 @@
             this.rbtnSeven.TabStop = true;
             this.rbtnSeven.Text = "7%";
             this.rbtnSeven.UseVisualStyleBackColor = true;
-            this.rbtnSeven.CheckedChanged += new System.EventHandler(this.rbtnInterestRate_Checked);
+            this.rbtnSeven.CheckedChanged += new System.EventHandler(this.RbtnInterestRate_Checked);
             // 
-            // label5
+            // lblReimbbursement
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(488, 271);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Remboursements";
+            this.lblReimbbursement.AutoSize = true;
+            this.lblReimbbursement.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblReimbbursement.Location = new System.Drawing.Point(488, 271);
+            this.lblReimbbursement.Name = "lblReimbbursement";
+            this.lblReimbbursement.Size = new System.Drawing.Size(126, 20);
+            this.lblReimbbursement.TabIndex = 9;
+            this.lblReimbbursement.Text = "Remboursement";
             // 
             // lblNumberOfPayment
             // 
@@ -237,7 +237,7 @@
             this.Controls.Add(this.lstPeriodicity);
             this.Controls.Add(this.lblResultAmount);
             this.Controls.Add(this.lblNumberOfPayment);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblReimbbursement);
             this.Controls.Add(this.grpBoxInterestRate);
             this.Controls.Add(this.txtBoxLoan);
             this.Controls.Add(this.txtBoxName);
@@ -247,7 +247,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Emprunts";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpBoxInterestRate.ResumeLayout(false);
             this.grpBoxInterestRate.PerformLayout();
@@ -269,7 +269,7 @@
         private RadioButton rbtnNine;
         private RadioButton rbtnEight;
         private RadioButton rbtnSeven;
-        private Label label5;
+        private Label lblReimbbursement;
         private Label lblNumberOfPayment;
         private Label lblResultAmount;
         private ListBox lstPeriodicity;

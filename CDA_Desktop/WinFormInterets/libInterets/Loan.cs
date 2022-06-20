@@ -3,14 +3,14 @@
     public class Loan
     {
         public string Name { get; set; }
-        public int LoanSum { get; set; }
+        public int LoanAmount { get; set; }
         public int Duration { get; set; }
         public int Interest { get; set; }
 
-        public Loan(string _name, int _loanSum, int _duration, int _interest)
+        public Loan(string _name, int _loanAmount, int _duration, int _interest)
         {
             Name = _name;
-            LoanSum = _loanSum;
+            LoanAmount = _loanAmount;
             Duration = _duration; 
             Interest = _interest;
         }
@@ -20,7 +20,7 @@
         public double AmountPeriodicalCalculation()
         {
             double monthlInterest = ((double)Interest / 12D)/100D;
-            double result = LoanSum *(monthlInterest/(1-Math.Pow(1+ monthlInterest, -Duration)));
+            double result = LoanAmount *(monthlInterest/(1-Math.Pow(1+ monthlInterest, -Duration)));
             return result;
         }
     }

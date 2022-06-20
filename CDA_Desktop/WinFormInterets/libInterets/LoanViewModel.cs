@@ -6,31 +6,37 @@ namespace libInterets
     {
 
         public Loan loan;
-        Regex regexEmpty = new Regex("");
-        Regex regexFormat = new Regex(@"toto");
-        /*new Regex(@"^[a-zA-Z]+[-]?[a-zA-Z]+$");*/
+        Regex regexFormatName = new Regex(@"^[a-zA-Z]*[-]?[a-zA-Z]*$");
+        Regex regexFormatLoanAmount = new Regex(@"^\d{3,10}$");
+        Regex regextEmpty = new Regex("");
         public LoanViewModel(Loan loan)
         {
             this.loan = loan;  
         }
-
-       public bool IsNameValid(string _name)
+        public bool IsFormatName(string _name)
         {
             _name = loan.Name;
-            if (regexEmpty.IsMatch("") || regexFormat.IsMatch(_name))
+            if (regexFormatName.IsMatch(_name))
             {
                 return true;
             }
             else return false;
         }
-        public bool IsLoanSumValid(string _loanSum)
-        { 
-            bool isLoanSumInt = int.TryParse(_loanSum,out int test);
-        
-            if (isLoanSumInt)
+        public bool IsFormatLoanAmount(int _loanSum)
+        {
+            _loanSum = loan.LoanAmount;
+            if (regexFormatLoanAmount.IsMatch(_loanSum.ToString()))
             {
-                loan.LoanSum = test;
-                return isLoanSumInt;
+                return true;
+            }
+            else return false;
+        }
+        public bool IsEmptyLoanAmount(int _loanSum)
+        {
+            _loanSum = loan.LoanAmount;
+            if (regextEmpty.IsMatch(_loanSum.ToString()))
+            {
+                return true;
             }
             else return false;
         }
