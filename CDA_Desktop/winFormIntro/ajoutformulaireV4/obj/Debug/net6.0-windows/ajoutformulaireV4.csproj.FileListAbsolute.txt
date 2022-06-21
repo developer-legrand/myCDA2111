@@ -1,7 +1,0 @@
-C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutformulaireV4\obj\Debug\net6.0-windows\ajoutformulaireV4.csproj.AssemblyReference.cache
-C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutformulaireV4\obj\Debug\net6.0-windows\ajoutformulaireV4.Form1.resources
-C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutformulaireV4\obj\Debug\net6.0-windows\ajoutformulaireV4.csproj.GenerateResource.cache
-C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutformulaireV4\obj\Debug\net6.0-windows\ajoutformulaireV4.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutformulaireV4\obj\Debug\net6.0-windows\ajoutformulaireV4.AssemblyInfoInputs.cache
-C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutformulaireV4\obj\Debug\net6.0-windows\ajoutformulaireV4.AssemblyInfo.cs
-C:\Users\33783\Documents\GitHub\myCDA2111\CDA_Desktop\winFormIntro\ajoutformulaireV4\obj\Debug\net6.0-windows\ajoutformulaireV4.csproj.CoreCompileInputs.cache
