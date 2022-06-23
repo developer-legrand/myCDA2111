@@ -4,8 +4,7 @@ namespace Interets
 {
     public partial class Form1 : Form
     {
-        List<string> dsPeriodicity;
-        List<int> dsPeriodicityValue;
+
         Loan resultLoan;
         LoanViewModel validateLoan;
         string name;
@@ -21,9 +20,7 @@ namespace Interets
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dsPeriodicity = new List<string>() { "Mensuelle", "Bimestrielle", "Trimestrielle", "Semestrielle", "Annuelle" };
-            dsPeriodicityValue = new List<int>() { 1, 2, 3, 6, 12 };
-            lstPeriodicity.DataSource = dsPeriodicity;
+
             txtBoxName.Focus();        
             lblDurationMonth.Text = "1";
             rbtnSeven.Tag = 7;
@@ -87,7 +84,7 @@ namespace Interets
             hsbDurationMonth.LargeChange = value * 2;
             hsbDurationMonth.SmallChange = value;
             hsbDurationMonth.Minimum = value;
-            hsbDurationMonth.Maximum = 300 + (value * 2 - value );
+            hsbDurationMonth.Maximum = 300 + (value * 2 - 1 );
             hsbDurationMonth.Value = value;
             lblDurationMonth.Text = value.ToString();
         }
