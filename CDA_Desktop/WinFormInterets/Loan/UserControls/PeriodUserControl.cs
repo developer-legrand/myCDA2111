@@ -1,21 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Loan.LibraryLoan;
-
+﻿using Loan.LibraryLoan;
 
 namespace Loan.UserControls
 {
     public partial class PeriodUserControl : UserControl
     {
-        private int Periodicity => periodicityUsed[lbPeriodicity.SelectedIndex].PeriodicityDuration;
-      
+        public LoanResult LoanResult { get; set; }
+        public int Periodicity => periodicityUsed[lbPeriodicity.SelectedIndex].PeriodicityDuration;
+        
         public readonly Periodicity[] periodicityUsed = new Periodicity[]
         {
             new Periodicity("Mensuelle", 1),
@@ -23,12 +14,12 @@ namespace Loan.UserControls
             new Periodicity("Trimestrielle", 3),
             new Periodicity("Semestrielle", 6),
             new Periodicity("Annuelle", 12),
-          
         };
         private void PeriodUserControl_Load(object sender, EventArgs e)
         {
             lbPeriodicity.DataSource = periodicityUsed;
             lbPeriodicity.SelectedIndex = 0;
+            LoanResult.GetInstance();
         }
         public PeriodUserControl()
         {
@@ -49,7 +40,6 @@ namespace Loan.UserControls
         {
             lblDuration.Text = hsbDuration.Value.ToString();
         }
-
 
     }
 }

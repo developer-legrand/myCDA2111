@@ -1,5 +1,5 @@
 using Loan.LibraryLoan;
-
+using System.ComponentModel;
 
 namespace Loan
 {
@@ -12,6 +12,7 @@ namespace Loan
         private int duration;
         private long loanAmount;
         private double interestRate;
+        private int periodicity;
 
 
         public LoanForm()
@@ -21,41 +22,25 @@ namespace Loan
 
         private void LoanForm_Load(object sender, EventArgs e)
         {
-            tbName.Focus();
             rbSeven.Tag = 0.07;
             rbEight.Tag = 0.08;
             rbNine.Tag = 0.09;
+            tbName.Focus();
             rbSeven.Checked = true;
-            loanResult = new LoanResult(name, loanAmount, duration, interestRate);
-            loanValidator = new LoanViewModel();
-          
+            loanResult = LoanResult.GetInstance();
+            loanResult.OnUpdate += LoanUpdated;
+
         }
 
         private void TbName_TextChanged(object sender, EventArgs e)
         {
-            
             name = tbName.Text;
-            if (!loanValidator.IsFormatName(name))
-            {
-                tbName.BackColor = Color.Red;    
-            }
-            else
-            {
-                tbName.BackColor = Color.Green;
-            }
+            MessageBox.Show(loanResult.Name.ToString());
         }
 
         private void TbLoan_TextChanged(object sender, EventArgs e)
         {
-            
-            loanAmount = long.Parse(tbLoan.Text) ;
-            if (!loanValidator.IsEmptyLoanAmount(loanAmount) || !loanValidator.IsFormatLoanAmount(loanAmount))
-            {
-                tbLoan.BackColor = Color.Red;
-            } else
-            {
-                tbLoan.BackColor = Color.Green;
-            }
+            loanAmount = long.Parse(tbLoan.Text); 
         }
 
         private void RbValueTag_Checked(object sender, EventArgs e)
@@ -64,6 +49,15 @@ namespace Loan
             interestRate = (double)radioButtonChecked.Tag;
         }
 
-    
+        private void LoanUpdated(object sender, PropertyChangedEventArgs e)
+        {
+            if (sender is LoanResult loanSender)
+            {
+                lblNumberOfPayment.Text = loanSender.NumberRepayments.ToString();
+                lblResultAmount.Text = loanSender.GetSumPerPeriodicity().ToString();
+            }
+        }
+
+
     }
 }
