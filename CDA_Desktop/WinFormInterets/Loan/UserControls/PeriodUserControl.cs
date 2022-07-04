@@ -4,9 +4,9 @@ namespace Loan.UserControls
 {
     public partial class PeriodUserControl : UserControl
     {
-        public LoanResult LoanResult { get; set; }
+        public LoanResult Loan;
         public int Periodicity => periodicityUsed[lbPeriodicity.SelectedIndex].PeriodicityDuration;
-        
+        public int Duration => hsbDuration.Value;
         public readonly Periodicity[] periodicityUsed = new Periodicity[]
         {
             new Periodicity("Mensuelle", 1),
@@ -17,9 +17,10 @@ namespace Loan.UserControls
         };
         private void PeriodUserControl_Load(object sender, EventArgs e)
         {
+            Loan = LoanResult.GetInstance();
             lbPeriodicity.DataSource = periodicityUsed;
-            lbPeriodicity.SelectedIndex = 0;
-            LoanResult.GetInstance();
+            lbPeriodicity.SelectedIndex = 4;
+            
         }
         public PeriodUserControl()
         {
@@ -39,6 +40,7 @@ namespace Loan.UserControls
         private void hsbDuration_ValueChanged(object sender, EventArgs e)
         {
             lblDuration.Text = hsbDuration.Value.ToString();
+            Loan.SetNumberMonths(hsbDuration.Value);
         }
 
     }

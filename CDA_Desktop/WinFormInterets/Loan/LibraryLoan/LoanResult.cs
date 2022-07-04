@@ -6,36 +6,68 @@ namespace Loan.LibraryLoan
 {
     public class LoanResult
     {
-        public string Name { get; set; }
-        public long LoanAmount { get; set; }
-        public int Duration { get; set; }
-        public double Interest { get; private set; }
-        public int Periodicity { get; set; }
-        public int NumberRepayments { get { return (Duration / Periodicity); } }
+        private long _loanAmount;
+        private int _periodicity;
         public event PropertyChangedEventHandler OnUpdate;
         private static LoanResult? instance = null;
-
-        public LoanResult(string _name, long _loanAmount, int _duration, double _interest, int _peridocity)
+        public LoanResult()
         {
-            Name = _name;
-            LoanAmount = _loanAmount;
-            Duration = _duration;
-            Interest = _interest;
-            Periodicity = _peridocity;
+            Name = "";
+            LoanAmount = 0;
+            Duration = 1;
+            Interest = 0.07D;
+            Periodicity = 1;
         }
 
         public static LoanResult GetInstance()
         {
             if (instance == null)
             {
-                instance = new LoanResult("", 0, 1, 0.07D, 1);
+                instance = new LoanResult();
             }
             return instance;
         }
 
+        public string Name { get; set; }
+        public int Duration { get; private set; }
+        public double Interest { get; private set; }
+        public long LoanAmount 
+        {
+            get => _loanAmount;
+            set
+            {
+                _loanAmount = value;
+                Updated();
+            } 
+        }
+
+        public int Periodicity
+        {
+            get => _periodicity;
+            set
+            {
+                _periodicity = value;
+                Updated();
+            }
+        }
+        public int NumberRepayments { get { return (Duration / Periodicity); } }
+        public double MonthlyInterest { get { return Interest/ (12 / Periodicity); } }
+
+
+        public void SetInterestRate(double newValue)
+        {
+            Interest = newValue;
+            Updated();
+        }
+
+        public void SetNumberMonths(int newValue)
+        { 
+            Duration = newValue;
+            Updated();
+        }
         public double GetSumPerPeriodicity()
         {
-            return LoanAmount * Interest / (1 - Math.Pow(1 + Interest, -NumberRepayments));
+            return LoanAmount * MonthlyInterest / (1 - Math.Pow(1 + MonthlyInterest, -NumberRepayments));
         }
 
         private void Updated()
