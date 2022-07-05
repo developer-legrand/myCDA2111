@@ -266,7 +266,7 @@
             this.rbFondBleu.UseVisualStyleBackColor = true;
             this.rbFondBleu.CheckedChanged += new System.EventHandler(this.RbFondSelect);
             // 
-            // Form1
+            // Caractere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -277,8 +277,8 @@
             this.Controls.Add(this.gbChoix);
             this.Controls.Add(this.tbInputUser);
             this.Controls.Add(this.bgFond);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Caractere";
+            this.Text = "Caractere";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.bgCasse.ResumeLayout(false);
             this.bgCasse.PerformLayout();

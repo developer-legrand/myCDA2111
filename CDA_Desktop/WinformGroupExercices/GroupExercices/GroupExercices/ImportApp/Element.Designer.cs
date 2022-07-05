@@ -195,7 +195,7 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnAjout_Click);
             // 
-            // Form1
+            // Element
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -216,8 +216,8 @@
             this.Controls.Add(this.tbIndexElement);
             this.Controls.Add(this.tbInputUser);
             this.Controls.Add(this.lstBoxElement);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Element";
+            this.Text = "Element";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

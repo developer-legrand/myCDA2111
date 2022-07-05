@@ -172,7 +172,7 @@
             this.hsbRed.TabIndex = 13;
             this.hsbRed.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ScrollValueChanged);
             // 
-            // Form1
+            // ColorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,8 +190,8 @@
             this.Controls.Add(this.hsbGreen);
             this.Controls.Add(this.hsbBlue);
             this.Controls.Add(this.hsbRed);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ColorForm";
+            this.Text = "Couleur";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numBlueText)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGreenText)).EndInit();

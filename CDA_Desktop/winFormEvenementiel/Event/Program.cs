@@ -1,4 +1,4 @@
-namespace GroupExercices
+namespace Event
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace GroupExercices
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmMenu());
+            Application.Run(new Form1());
         }
     }
 }
