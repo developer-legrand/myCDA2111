@@ -1,4 +1,4 @@
-namespace ajoutFormulairev2
+namespace Formulaire
 {
     internal static class Program
     {

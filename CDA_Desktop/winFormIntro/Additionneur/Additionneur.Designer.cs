@@ -1,4 +1,4 @@
-﻿namespace Addition
+﻿namespace Additionneur
 {
     partial class Additionneur
     {

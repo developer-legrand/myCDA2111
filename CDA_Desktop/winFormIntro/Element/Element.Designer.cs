@@ -1,4 +1,4 @@
-﻿namespace listBox
+﻿namespace Element
 {
     partial class Element
     {

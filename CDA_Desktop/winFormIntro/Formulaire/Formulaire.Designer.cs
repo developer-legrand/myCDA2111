@@ -1,4 +1,4 @@
-﻿namespace ajoutFormulairev2
+﻿namespace Formulaire
 {
     partial class Formulaire
     {

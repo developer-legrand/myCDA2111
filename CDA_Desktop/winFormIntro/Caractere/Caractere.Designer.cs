@@ -1,4 +1,4 @@
-﻿namespace checkBoxRadioButtonV2
+﻿namespace Caractere
 {
     partial class Caractere
     {

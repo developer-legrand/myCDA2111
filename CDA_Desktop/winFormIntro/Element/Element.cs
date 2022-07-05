@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Text.RegularExpressions;
 
-namespace listBox
+namespace Element
 {
     public partial class Element : Form
     {

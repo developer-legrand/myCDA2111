@@ -1,4 +1,4 @@
-namespace checkBoxRadioButtonV2
+namespace Caractere
 {
     internal static class Program
     {

@@ -1,4 +1,4 @@
-namespace Addition
+namespace Additionneur
 {
     internal static class Program
     {

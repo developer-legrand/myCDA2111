@@ -2,7 +2,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace ajoutFormulairev2
+namespace Formulaire
 {
     public partial class Formulaire : Form
     {

@@ -1,5 +1,5 @@
 
-namespace checkBoxRadioButtonV2
+namespace Caractere
 {
     public partial class Caractere : Form
     { 

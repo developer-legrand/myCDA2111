@@ -1,4 +1,4 @@
-namespace Addition
+namespace Additionneur
 {
     public partial class Additionneur : Form
     {
