@@ -28,75 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tvHardDisk = new System.Windows.Forms.TreeView();
+            this.btnHardDisk = new System.Windows.Forms.Button();
+            this.btnExpansion = new System.Windows.Forms.Button();
+            this.btnReduction = new System.Windows.Forms.Button();
+            this.tbPath = new System.Windows.Forms.TextBox();
+            this.lblPath = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
-            // treeView1
+            // tvHardDisk
             // 
-            this.treeView1.Location = new System.Drawing.Point(151, 88);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(432, 272);
-            this.treeView1.TabIndex = 0;
+            this.tvHardDisk.Location = new System.Drawing.Point(151, 88);
+            this.tvHardDisk.Name = "tvHardDisk";
+            this.tvHardDisk.Size = new System.Drawing.Size(432, 272);
+            this.tvHardDisk.TabIndex = 0;
             // 
-            // button1
+            // btnHardDisk
             // 
-            this.button1.Location = new System.Drawing.Point(151, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 70);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHardDisk.Location = new System.Drawing.Point(151, 12);
+            this.btnHardDisk.Name = "btnHardDisk";
+            this.btnHardDisk.Size = new System.Drawing.Size(78, 70);
+            this.btnHardDisk.TabIndex = 1;
+            this.btnHardDisk.Text = "Hard Disk Display";
+            this.btnHardDisk.UseVisualStyleBackColor = true;
+            this.btnHardDisk.Click += new System.EventHandler(this.BtnHardDisk_Click);
             // 
-            // button2
+            // btnExpansion
             // 
-            this.button2.Location = new System.Drawing.Point(151, 366);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 70);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnExpansion.Location = new System.Drawing.Point(151, 366);
+            this.btnExpansion.Name = "btnExpansion";
+            this.btnExpansion.Size = new System.Drawing.Size(78, 70);
+            this.btnExpansion.TabIndex = 2;
+            this.btnExpansion.Text = "Tree View Expansion";
+            this.btnExpansion.UseVisualStyleBackColor = true;
+            this.btnExpansion.Click += new System.EventHandler(this.BtnExpansion_Click);
             // 
-            // button3
+            // btnReduction
             // 
-            this.button3.Location = new System.Drawing.Point(505, 366);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 70);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnReduction.Location = new System.Drawing.Point(505, 366);
+            this.btnReduction.Name = "btnReduction";
+            this.btnReduction.Size = new System.Drawing.Size(78, 70);
+            this.btnReduction.TabIndex = 3;
+            this.btnReduction.Text = "Tree View Reduction";
+            this.btnReduction.UseVisualStyleBackColor = true;
+            this.btnReduction.Click += new System.EventHandler(this.BtnReduction_Click);
             // 
-            // textBox1
+            // tbPath
             // 
-            this.textBox1.Location = new System.Drawing.Point(331, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 23);
-            this.textBox1.TabIndex = 4;
+            this.tbPath.Location = new System.Drawing.Point(331, 59);
+            this.tbPath.Name = "tbPath";
+            this.tbPath.Size = new System.Drawing.Size(252, 23);
+            this.tbPath.TabIndex = 4;
+            this.tbPath.Validating += new System.ComponentModel.CancelEventHandler(this.TbPath_Validating);
             // 
-            // label1
+            // lblPath
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(331, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
+            this.lblPath.AutoSize = true;
+            this.lblPath.Location = new System.Drawing.Point(331, 41);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(175, 15);
+            this.lblPath.TabIndex = 5;
+            this.lblPath.Text = "path of the file to be examined :";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 546);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.lblPath);
+            this.Controls.Add(this.tbPath);
+            this.Controls.Add(this.btnReduction);
+            this.Controls.Add(this.btnExpansion);
+            this.Controls.Add(this.btnHardDisk);
+            this.Controls.Add(this.tvHardDisk);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -106,11 +115,12 @@
 
         #endregion
 
-        private TreeView treeView1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private TextBox textBox1;
-        private Label label1;
+        private TreeView tvHardDisk;
+        private Button btnHardDisk;
+        private Button btnExpansion;
+        private Button btnReduction;
+        private TextBox tbPath;
+        private Label lblPath;
+        private OpenFileDialog openFileDialog1;
     }
 }
