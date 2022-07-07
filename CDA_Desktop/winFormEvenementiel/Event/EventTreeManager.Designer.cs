@@ -1,6 +1,6 @@
 ﻿namespace Event
 {
-    partial class Form1
+    partial class EventTreeManager
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,21 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventTreeManager));
             this.tvHardDisk = new System.Windows.Forms.TreeView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnHardDisk = new System.Windows.Forms.Button();
             this.btnExpansion = new System.Windows.Forms.Button();
             this.btnReduction = new System.Windows.Forms.Button();
             this.tbPath = new System.Windows.Forms.TextBox();
             this.lblPath = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.ofdTree = new System.Windows.Forms.OpenFileDialog();
+            this.timerClock = new System.Windows.Forms.Timer(this.components);
+            this.lblDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tvHardDisk
             // 
+            this.tvHardDisk.ImageIndex = 0;
+            this.tvHardDisk.ImageList = this.imageList1;
             this.tvHardDisk.Location = new System.Drawing.Point(151, 88);
             this.tvHardDisk.Name = "tvHardDisk";
+            this.tvHardDisk.SelectedImageIndex = 0;
             this.tvHardDisk.Size = new System.Drawing.Size(432, 272);
             this.tvHardDisk.TabIndex = 0;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth16Bit;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "folder.png");
+            this.imageList1.Images.SetKeyName(1, "file.png");
             // 
             // btnHardDisk
             // 
@@ -91,15 +107,29 @@
             this.lblPath.TabIndex = 5;
             this.lblPath.Text = "path of the file to be examined :";
             // 
-            // openFileDialog1
+            // ofdTree
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.ofdTree.FileName = "openFileDialog1";
+            // 
+            // timerClock
+            // 
+            this.timerClock.Tick += new System.EventHandler(this.timerClock_Tick);
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(602, 280);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(101, 15);
+            this.lblDate.TabIndex = 6;
+            this.lblDate.Text = "Clock Diplay Here";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 546);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblPath);
             this.Controls.Add(this.tbPath);
             this.Controls.Add(this.btnReduction);
@@ -108,6 +138,7 @@
             this.Controls.Add(this.tvHardDisk);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,6 +152,9 @@
         private Button btnReduction;
         private TextBox tbPath;
         private Label lblPath;
-        private OpenFileDialog openFileDialog1;
+        private OpenFileDialog ofdTree;
+        private ImageList imageList1;
+        private System.Windows.Forms.Timer timerClock;
+        private Label lblDate;
     }
 }
