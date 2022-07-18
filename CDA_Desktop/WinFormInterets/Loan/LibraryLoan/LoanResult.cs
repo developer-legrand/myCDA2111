@@ -1,8 +1,4 @@
-﻿
-
-using System.ComponentModel;
-
-namespace Loan.LibraryLoan
+﻿namespace Loan.LibraryLoan
 {
     public class LoanResult
     {
@@ -31,14 +27,14 @@ namespace Loan.LibraryLoan
         public string Name { get; set; }
         public int Duration { get; private set; }
         public double Interest { get; private set; }
-        public long LoanAmount 
+        public long LoanAmount
         {
             get => _loanAmount;
             set
             {
                 _loanAmount = value;
                 Updated();
-            } 
+            }
         }
 
         public int Periodicity
@@ -51,7 +47,7 @@ namespace Loan.LibraryLoan
             }
         }
         public int NumberRepayments { get { return (Duration / Periodicity); } }
-        public double MonthlyInterest { get { return Interest/ (12 / Periodicity); } }
+        public double MonthlyInterest { get { return Interest / (12 / Periodicity); } }
 
 
         public void SetInterestRate(double newValue)
@@ -61,7 +57,7 @@ namespace Loan.LibraryLoan
         }
 
         public void SetNumberMonths(int newValue)
-        { 
+        {
             Duration = newValue;
             Updated();
         }
@@ -72,7 +68,7 @@ namespace Loan.LibraryLoan
 
         private void Updated()
         {
-        if (OnUpdate != null)
+            if (OnUpdate != null)
             {
                 OnUpdate(this, new PropertyChangedEventArgs(nameof(Interest)));
             }

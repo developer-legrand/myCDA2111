@@ -1,11 +1,10 @@
 using Loan.LibraryLoan;
-using System.ComponentModel;
 
 namespace Loan
 {
     public partial class LoanForm : Form
     {
-        
+
         private LoanViewModel loanValidator;
         private LoanResult loanResult;
 
@@ -20,7 +19,7 @@ namespace Loan
             rbEight.Tag = 0.08D;
             rbNine.Tag = 0.09D;
             tbName.Focus();
-            
+
             loanResult = LoanResult.GetInstance();
             loanResult.OnUpdate += LoanUpdated;
             rbSeven.Checked = true;
@@ -33,7 +32,7 @@ namespace Loan
         }
 
         private void TbLoan_TextChanged(object sender, EventArgs e)
-        
+
         {
             loanResult.LoanAmount = long.Parse(tbLoan.Text);
         }

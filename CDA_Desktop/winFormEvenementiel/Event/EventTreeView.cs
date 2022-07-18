@@ -2,10 +2,10 @@ using Event.EventLib;
 
 namespace Event
 {
-    public partial class EventTreeManager : Form
+    public partial class EventTreeView : Form
     {
         private FolderBrowserDialog dialog;
-        public EventTreeManager()
+        public EventTreeView()
         {
             InitializeComponent();
         }
@@ -26,15 +26,17 @@ namespace Event
             TreeManager.InputDirectory(tbPath, tvHardDisk);
         }
         private void BtnExpansion_Click(object sender, EventArgs e)
-        {
+        {  
             tvHardDisk.BeginUpdate();
             tvHardDisk.ExpandAll();
             tvHardDisk.EndUpdate();
         }
+
         private void BtnReduction_Click(object sender, EventArgs e)
         {
+            tvHardDisk.BeginUpdate();
             tvHardDisk.CollapseAll();
+            tvHardDisk.EndUpdate();
         }
-
     }
 }

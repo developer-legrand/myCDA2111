@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Loan.LibraryLoan
+﻿namespace Loan.LibraryLoan
 {
     public class Periodicity
     {
@@ -14,7 +8,7 @@ namespace Loan.LibraryLoan
         public Periodicity(string _periodicityName, int _periodicityDuration)
         {
             PeriodicityName = _periodicityName;
-            PeriodicityDuration = _periodicityDuration;  
+            PeriodicityDuration = _periodicityDuration;
         }
 
         override public string ToString()

@@ -11,24 +11,21 @@ namespace Event.EventLib
         public static void DisplayTreeNode(FolderBrowserDialog fbd, TreeView tree, TextBox txt)
         {
             tree.Nodes.Clear();
-            fbd = new FolderBrowserDialog(); 
+            fbd = new FolderBrowserDialog();
             if (fbd.ShowDialog() != DialogResult.OK) { return; }
-            tree.BeginUpdate();
             tree.Nodes.Add(SelectDirectory(fbd.SelectedPath));
             txt.Text = fbd.SelectedPath;
-            tree.EndUpdate();
         }
-        private  static TreeNode SelectDirectory(string path)
+        private static TreeNode SelectDirectory(string path)
         {
             TreeNode result = new TreeNode(Path.GetFileName(path));
-            foreach (var files in Directory.GetFiles(path))
-            { 
-                result.Nodes.Add(Path.GetFileName(files));
-                /*result.SelectedImageIndex = 1;*/ 
-            }
             foreach (var subdirectory in Directory.GetDirectories(path))
-            {           
-                result.Nodes.Add(SelectDirectory(subdirectory)); 
+            {
+                result.Nodes.Add(SelectDirectory(subdirectory));
+            }
+            foreach (var files in Directory.GetFiles(path))
+            {
+                result.Nodes.Add(Path.GetFileName(files));      
             }
             return result;
         }

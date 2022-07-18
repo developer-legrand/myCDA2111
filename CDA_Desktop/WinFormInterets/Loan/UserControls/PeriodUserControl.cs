@@ -20,7 +20,7 @@ namespace Loan.UserControls
             Loan = LoanResult.GetInstance();
             lbPeriodicity.DataSource = periodicityUsed;
             lbPeriodicity.SelectedIndex = 4;
-            
+
         }
         public PeriodUserControl()
         {

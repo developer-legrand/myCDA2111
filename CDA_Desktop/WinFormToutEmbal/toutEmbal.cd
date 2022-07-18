@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WinFormToutEmbal.LibToutEmbal.Box">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>LibToutEmbal\Box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormToutEmbal.LibToutEmbal.Production">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAkAAAAAAAAAEAAAAAABAAAACEAAAAAAEgA=</HashCode>
+      <FileName>LibToutEmbal\Production.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormToutEmbal.frmToutEmbal" Collapsed="true">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQCQAAAAiDCgyBAAACBAAAGQoPFBQgAAAAAhAYAIAE=</HashCode>
+      <FileName>frrmToutEmbal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
