@@ -1,38 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WinFormToutEmbal.LibToutEmbal
 {
-    class Production
+    public class Production
     {
 
         //Variables
-
-        private int boxProduced;
-        private int nbDefectiveBox;
+        public event PropertyChangedEventHandler ProdValueChanged;
         public Thread prodThread;
+        private int _nbDefectiveBox;
+        private Box _myNewBox;
+        private int _boxProduced;
+        private string _typeProduction;
+        private int _boxPerHour;
+        private int _boxProdMax;
 
-
-        //{ get; set; }
-        private string TypeProduction;
-        private int BoxPerHour;
-        private int BoxProdMax;
-
+        // { GETTER SETTER }
+        public int BoxProduced 
+        {
+            get
+            {
+                return _boxProduced;
+            }
+            set
+            {
+                _boxProduced = value;
+                UpdatedProdValue();
+            }
+        }
 
         public Production(string typeProduction, int boxPerHour, int boxProdMax)
         {
-            TypeProduction = typeProduction;
-            BoxPerHour = boxPerHour;
-            BoxProdMax = boxProdMax;
+            this._typeProduction = typeProduction;
+            this._boxPerHour = boxPerHour;
+            this._boxProdMax = boxProdMax;
         }
 
         public void StartProduction()
         {
             prodThread = new Thread(BoxOnProduct);
-            prodThread.Start();
+            prodThread.Start();  
         }
 
         public void PauseProduction()
@@ -46,20 +58,29 @@ namespace WinFormToutEmbal.LibToutEmbal
 
         private void BoxOnProduct()
         {
-            nbDefectiveBox = 0;
-            while(boxProduced < BoxProdMax)
+            _nbDefectiveBox = 0;
+            BoxProduced = 0;
+            while (BoxProduced < _boxProdMax)
             {
-                Box myNewBox = new Box(TypeProduction);
-                ;
-                if (myNewBox.DefectiveBox)
+                _myNewBox = new Box (_typeProduction);
+                if (_myNewBox.DefectiveBox)
                 {
-                    boxProduced++;
+                    BoxProduced +=1;
                 }
                 else
                 {
-                    nbDefectiveBox += 1;
+                    _nbDefectiveBox += 1;
                 }
-                Thread.Sleep(3600000 / BoxPerHour);
+                
+                Thread.Sleep(3600000/_boxPerHour);
+            }
+        }
+        private void UpdatedProdValue()
+        {
+            // si au moins 1 abonné à l'évènement
+            if (this.ProdValueChanged != null)
+            {
+                ProdValueChanged(this, new PropertyChangedEventArgs(nameof(BoxProduced)));
             }
         }
     }

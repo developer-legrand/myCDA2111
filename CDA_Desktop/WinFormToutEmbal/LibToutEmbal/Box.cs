@@ -10,7 +10,7 @@ namespace WinFormToutEmbal.LibToutEmbal
     {
         private string TypeBox;
         public bool DefectiveBox { get; private set; }
-        private Random randDefectiveBox;
+        private Random randDefectiveBox = new();
         public Box(string typeBox)
         {
             TypeBox = typeBox;

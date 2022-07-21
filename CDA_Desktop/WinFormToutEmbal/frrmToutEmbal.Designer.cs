@@ -57,10 +57,10 @@
             this.lblProdB = new System.Windows.Forms.Label();
             this.lblProdC = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pageC = new System.Windows.Forms.TabPage();
+            this.pageB = new System.Windows.Forms.TabPage();
+            this.pageA = new System.Windows.Forms.TabPage();
             this.tabBox = new System.Windows.Forms.TabControl();
-            this.tabBoxA = new System.Windows.Forms.TabPage();
-            this.tabBoxB = new System.Windows.Forms.TabPage();
-            this.tabBoxC = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabBox.SuspendLayout();
@@ -88,7 +88,7 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             // 
             // productionToolStripMenuItem
@@ -108,25 +108,26 @@
             this.bToolStripMenuItem,
             this.cToolStripMenuItem});
             this.démarrerToolStripMenuItem.Name = "démarrerToolStripMenuItem";
-            this.démarrerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.démarrerToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.démarrerToolStripMenuItem.Text = "Démarrer";
             // 
             // aToolStripMenuItem
             // 
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
             this.aToolStripMenuItem.Text = "A";
+            this.aToolStripMenuItem.Click += new System.EventHandler(this.aToolStripMenuItem_Click);
             // 
             // bToolStripMenuItem
             // 
             this.bToolStripMenuItem.Name = "bToolStripMenuItem";
-            this.bToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
             this.bToolStripMenuItem.Text = "B";
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
             this.cToolStripMenuItem.Text = "C";
             // 
             // arrêterToolStripMenuItem
@@ -136,25 +137,25 @@
             this.bToolStripMenuItem1,
             this.cToolStripMenuItem1});
             this.arrêterToolStripMenuItem.Name = "arrêterToolStripMenuItem";
-            this.arrêterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arrêterToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.arrêterToolStripMenuItem.Text = "Arrêter";
             // 
             // aToolStripMenuItem1
             // 
             this.aToolStripMenuItem1.Name = "aToolStripMenuItem1";
-            this.aToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.aToolStripMenuItem1.Size = new System.Drawing.Size(82, 22);
             this.aToolStripMenuItem1.Text = "A";
             // 
             // bToolStripMenuItem1
             // 
             this.bToolStripMenuItem1.Name = "bToolStripMenuItem1";
-            this.bToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.bToolStripMenuItem1.Size = new System.Drawing.Size(82, 22);
             this.bToolStripMenuItem1.Text = "B";
             // 
             // cToolStripMenuItem1
             // 
             this.cToolStripMenuItem1.Name = "cToolStripMenuItem1";
-            this.cToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cToolStripMenuItem1.Size = new System.Drawing.Size(82, 22);
             this.cToolStripMenuItem1.Text = "C";
             // 
             // continuerToolStripMenuItem
@@ -164,25 +165,25 @@
             this.bToolStripMenuItem2,
             this.cToolStripMenuItem2});
             this.continuerToolStripMenuItem.Name = "continuerToolStripMenuItem";
-            this.continuerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.continuerToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.continuerToolStripMenuItem.Text = "continuer";
             // 
             // aToolStripMenuItem2
             // 
             this.aToolStripMenuItem2.Name = "aToolStripMenuItem2";
-            this.aToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.aToolStripMenuItem2.Size = new System.Drawing.Size(82, 22);
             this.aToolStripMenuItem2.Text = "A";
             // 
             // bToolStripMenuItem2
             // 
             this.bToolStripMenuItem2.Name = "bToolStripMenuItem2";
-            this.bToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.bToolStripMenuItem2.Size = new System.Drawing.Size(82, 22);
             this.bToolStripMenuItem2.Text = "B";
             // 
             // cToolStripMenuItem2
             // 
             this.cToolStripMenuItem2.Name = "cToolStripMenuItem2";
-            this.cToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.cToolStripMenuItem2.Size = new System.Drawing.Size(82, 22);
             this.cToolStripMenuItem2.Text = "C";
             // 
             // progressBarProdA
@@ -270,46 +271,46 @@
             this.lblProdC.TabIndex = 8;
             this.lblProdC.Text = "Production C";
             // 
+            // pageC
+            // 
+            this.pageC.Location = new System.Drawing.Point(4, 24);
+            this.pageC.Name = "pageC";
+            this.pageC.Padding = new System.Windows.Forms.Padding(3);
+            this.pageC.Size = new System.Drawing.Size(537, 158);
+            this.pageC.TabIndex = 2;
+            this.pageC.Text = "Caisse C";
+            this.pageC.UseVisualStyleBackColor = true;
+            // 
+            // pageB
+            // 
+            this.pageB.Location = new System.Drawing.Point(4, 24);
+            this.pageB.Name = "pageB";
+            this.pageB.Padding = new System.Windows.Forms.Padding(3);
+            this.pageB.Size = new System.Drawing.Size(537, 158);
+            this.pageB.TabIndex = 1;
+            this.pageB.Text = "Caisse B";
+            this.pageB.UseVisualStyleBackColor = true;
+            // 
+            // pageA
+            // 
+            this.pageA.Location = new System.Drawing.Point(4, 24);
+            this.pageA.Name = "pageA";
+            this.pageA.Padding = new System.Windows.Forms.Padding(3);
+            this.pageA.Size = new System.Drawing.Size(537, 158);
+            this.pageA.TabIndex = 0;
+            this.pageA.Text = "Caisse A";
+            this.pageA.UseVisualStyleBackColor = true;
+            // 
             // tabBox
             // 
-            this.tabBox.Controls.Add(this.tabBoxA);
-            this.tabBox.Controls.Add(this.tabBoxB);
-            this.tabBox.Controls.Add(this.tabBoxC);
+            this.tabBox.Controls.Add(this.pageA);
+            this.tabBox.Controls.Add(this.pageB);
+            this.tabBox.Controls.Add(this.pageC);
             this.tabBox.Location = new System.Drawing.Point(175, 52);
             this.tabBox.Name = "tabBox";
             this.tabBox.SelectedIndex = 0;
             this.tabBox.Size = new System.Drawing.Size(545, 186);
             this.tabBox.TabIndex = 9;
-            // 
-            // tabBoxA
-            // 
-            this.tabBoxA.Location = new System.Drawing.Point(4, 24);
-            this.tabBoxA.Name = "tabBoxA";
-            this.tabBoxA.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBoxA.Size = new System.Drawing.Size(537, 158);
-            this.tabBoxA.TabIndex = 0;
-            this.tabBoxA.Text = "Caisse A";
-            this.tabBoxA.UseVisualStyleBackColor = true;
-            // 
-            // tabBoxB
-            // 
-            this.tabBoxB.Location = new System.Drawing.Point(4, 24);
-            this.tabBoxB.Name = "tabBoxB";
-            this.tabBoxB.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBoxB.Size = new System.Drawing.Size(537, 158);
-            this.tabBoxB.TabIndex = 1;
-            this.tabBoxB.Text = "Caisse B";
-            this.tabBoxB.UseVisualStyleBackColor = true;
-            // 
-            // tabBoxC
-            // 
-            this.tabBoxC.Location = new System.Drawing.Point(4, 24);
-            this.tabBoxC.Name = "tabBoxC";
-            this.tabBoxC.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBoxC.Size = new System.Drawing.Size(537, 158);
-            this.tabBoxC.TabIndex = 2;
-            this.tabBoxC.Text = "Caisse C";
-            this.tabBoxC.UseVisualStyleBackColor = true;
             // 
             // frmToutEmbal
             // 
@@ -369,9 +370,11 @@
         private Label lblProdB;
         private Label lblProdC;
         private System.Windows.Forms.Timer timer1;
+        private TabPage pageC;
+        private UserControlTool.ViewBoxManager viewBoxManager3;
+        private TabPage pageB;
+        private UserControlTool.ViewBoxManager viewBoxManager2;
+        private TabPage pageA;
         private TabControl tabBox;
-        private TabPage tabBoxA;
-        private TabPage tabBoxB;
-        private TabPage tabBoxC;
     }
 }

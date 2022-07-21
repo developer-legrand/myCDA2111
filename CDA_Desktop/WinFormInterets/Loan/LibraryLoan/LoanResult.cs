@@ -1,4 +1,6 @@
-﻿namespace Loan.LibraryLoan
+﻿using System.ComponentModel;
+
+namespace Loan.LibraryLoan
 {
     public class LoanResult
     {

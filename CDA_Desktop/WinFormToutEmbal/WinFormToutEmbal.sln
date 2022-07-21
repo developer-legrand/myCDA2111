@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormToutEmbal", "WinFormToutEmbal.csproj", "{BE7CDC3A-5CDC-4B4B-A2EF-C77A71298C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormToutEmbal", "WinFormToutEmbal.csproj", "{BE7CDC3A-5CDC-4B4B-A2EF-C77A71298C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestToutEmbal", "..\TestToutEmbal\TestToutEmbal.csproj", "{90A883F4-5C22-4263-B0D8-A527F6DBF328}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BE7CDC3A-5CDC-4B4B-A2EF-C77A71298C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE7CDC3A-5CDC-4B4B-A2EF-C77A71298C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE7CDC3A-5CDC-4B4B-A2EF-C77A71298C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A883F4-5C22-4263-B0D8-A527F6DBF328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A883F4-5C22-4263-B0D8-A527F6DBF328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A883F4-5C22-4263-B0D8-A527F6DBF328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A883F4-5C22-4263-B0D8-A527F6DBF328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

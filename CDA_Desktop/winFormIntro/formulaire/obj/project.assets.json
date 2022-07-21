@@ -8,23 +8,25 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\33783\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\cyril\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\Formulaire\\Formulaire.csproj",
+      "projectUniqueName": "C:\\Users\\cyril\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\Formulaire\\Formulaire.csproj",
       "projectName": "Formulaire",
-      "projectPath": "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\Formulaire\\Formulaire.csproj",
-      "packagesPath": "C:\\Users\\33783\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\33783\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\Formulaire\\obj\\",
+      "projectPath": "C:\\Users\\cyril\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\Formulaire\\Formulaire.csproj",
+      "packagesPath": "C:\\Users\\cyril\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cyril\\Documents\\GitHub\\myCDA2111\\CDA_Desktop\\winFormIntro\\Formulaire\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\33783\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cyril\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
