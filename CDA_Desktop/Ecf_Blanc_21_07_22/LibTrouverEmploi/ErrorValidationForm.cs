@@ -17,6 +17,7 @@ namespace Ecf_Blanc_21_07_22.LibTrouverEmploi
         private Candidate person;
         private string firstName;
         private string lastName;
+        private string date;
 
         public ErrorValidationForm()
         {
@@ -30,7 +31,8 @@ namespace Ecf_Blanc_21_07_22.LibTrouverEmploi
             }
             catch (Exception e)
             {
-                throw new Exception(e.ToString());
+                return false;
+                /*throw new Exception(e.ToString());*/
             }
           
         }
@@ -42,17 +44,21 @@ namespace Ecf_Blanc_21_07_22.LibTrouverEmploi
             }
             catch (Exception e)
             {
-                throw new Exception(e.ToString());
+                return false;
+                /*throw new Exception(e.ToString());*/
             }
         }
 
         public bool DateInscriptionValidation(string date)
         {
             DateTime convertDate;
-                try
-                { 
+            DateTime convertDateNow = DateTime.Now;
+            //string uhu = DateTime.Now.ToString();
+            try
+                {
+                //convertDateNow = DateTime.ParseExact(uhu, datePattern, CultureInfo.InvariantCulture);
                 convertDate = DateTime.ParseExact(date, datePattern, CultureInfo.InvariantCulture);
-                    if(convertDate > DateTime.Now)
+                    if(convertDate > convertDateNow)
                     {
                         return false;
                     }
@@ -78,6 +84,16 @@ namespace Ecf_Blanc_21_07_22.LibTrouverEmploi
                 /*throw new Exception(e.ToString());*/
                 return false;
             }
+        }
+
+        public bool ValidCandidateInput(string firstName, string lastName, string date)
+        {
+            var a = FirstNameValidation(firstName);
+
+            return 
+                FirstNameValidation(firstName) &&
+                LastNameValidation(lastName) &&
+                DateInscriptionValidation(date);
         }
     }
 }

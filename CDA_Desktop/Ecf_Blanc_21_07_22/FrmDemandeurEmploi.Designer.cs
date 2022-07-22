@@ -85,7 +85,7 @@
             this.btnValidate.TabIndex = 5;
             this.btnValidate.Text = "Validate";
             this.btnValidate.UseVisualStyleBackColor = true;
-            this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
+            this.btnValidate.Click += new System.EventHandler(this.BtnValidate_Click);
             // 
             // label1
             // 
