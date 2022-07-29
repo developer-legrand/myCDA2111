@@ -1,6 +1,6 @@
 ﻿namespace WinFormToutEmbal.UserControlTool
 {
-    partial class ViewBoxManager
+    partial class ViewBoxUserControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.tbNumberBox = new System.Windows.Forms.TextBox();
             this.tbDefaultPerHour = new System.Windows.Forms.TextBox();
-            this.tbDefau = new System.Windows.Forms.TextBox();
+            this.tbDefaultFromStart = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,6 +38,7 @@
             // 
             // tbNumberBox
             // 
+            this.tbNumberBox.Enabled = false;
             this.tbNumberBox.Location = new System.Drawing.Point(189, 50);
             this.tbNumberBox.Name = "tbNumberBox";
             this.tbNumberBox.Size = new System.Drawing.Size(117, 23);
@@ -45,17 +46,19 @@
             // 
             // tbDefaultPerHour
             // 
+            this.tbDefaultPerHour.Enabled = false;
             this.tbDefaultPerHour.Location = new System.Drawing.Point(189, 92);
             this.tbDefaultPerHour.Name = "tbDefaultPerHour";
             this.tbDefaultPerHour.Size = new System.Drawing.Size(117, 23);
             this.tbDefaultPerHour.TabIndex = 1;
             // 
-            // tbDefau
+            // tbDefaultFromStart
             // 
-            this.tbDefau.Location = new System.Drawing.Point(189, 134);
-            this.tbDefau.Name = "tbDefau";
-            this.tbDefau.Size = new System.Drawing.Size(117, 23);
-            this.tbDefau.TabIndex = 2;
+            this.tbDefaultFromStart.Enabled = false;
+            this.tbDefaultFromStart.Location = new System.Drawing.Point(189, 134);
+            this.tbDefaultFromStart.Name = "tbDefaultFromStart";
+            this.tbDefaultFromStart.Size = new System.Drawing.Size(117, 23);
+            this.tbDefaultFromStart.TabIndex = 2;
             // 
             // label1
             // 
@@ -91,11 +94,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbDefau);
+            this.Controls.Add(this.tbDefaultFromStart);
             this.Controls.Add(this.tbDefaultPerHour);
             this.Controls.Add(this.tbNumberBox);
             this.Name = "ViewBoxManager";
             this.Size = new System.Drawing.Size(356, 205);
+            this.Load += new System.EventHandler(this.ViewBoxManager_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,7 +109,7 @@
 
         private TextBox tbNumberBox;
         private TextBox tbDefaultPerHour;
-        private TextBox tbDefau;
+        private TextBox tbDefaultFromStart;
         private Label label1;
         private Label label2;
         private Label label3;

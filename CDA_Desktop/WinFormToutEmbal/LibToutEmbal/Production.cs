@@ -12,39 +12,71 @@ namespace WinFormToutEmbal.LibToutEmbal
 
         //Variables
         public event PropertyChangedEventHandler ProdValueChanged;
-        public Thread prodThread;
-        private int _nbDefectiveBox;
-        private Box _myNewBox;
-        private int _boxProduced;
-        private string _typeProduction;
-        private int _boxPerHour;
-        private int _boxProdMax;
+        public event PropertyChangedEventHandler OnProdValueChanged;
 
-        // { GETTER SETTER }
+        public Thread prodThread;
+        private int defectiveBoxPerHour;
+        private double rateDefectiveBoxPerHour;
+        private double rateDefectiveBoxFromStart;
+        private Box myNewBox;
+        private int boxProduced;
+
+        private string TypeProduction { get; set; }
+        private int BoxPerHour { get; set; }
+        private int BoxProdMax { get; set; }
+
+// { GETTER SETTER }
         public int BoxProduced 
         {
-            get
-            {
-                return _boxProduced;
-            }
+            get { return boxProduced; }
             set
             {
-                _boxProduced = value;
+                boxProduced = value;
+                UpdatedProdValue();
+            }
+        }
+
+        public int DefectiveBoxPerHour
+        {
+            get { return defectiveBoxPerHour; }
+            set 
+            {
+                defectiveBoxPerHour = value;
+                UpdatedProdValue();
+            }
+        }
+
+        public double RateDefectiveBoxPerHour
+        {
+            get { return rateDefectiveBoxPerHour; }
+            set
+            {
+                rateDefectiveBoxPerHour = value;
+                UpdatedProdValue();
+            }
+        }
+
+        public double RateDefectiveBoxFromStart 
+        {
+            get { return rateDefectiveBoxPerHour; }
+            set
+            {
+                rateDefectiveBoxPerHour = value;
                 UpdatedProdValue();
             }
         }
 
         public Production(string typeProduction, int boxPerHour, int boxProdMax)
         {
-            this._typeProduction = typeProduction;
-            this._boxPerHour = boxPerHour;
-            this._boxProdMax = boxProdMax;
+            TypeProduction = typeProduction;
+            BoxPerHour = boxPerHour;
+            BoxProdMax = boxProdMax;
         }
 
         public void StartProduction()
         {
             prodThread = new Thread(BoxOnProduct);
-            prodThread.Start();  
+            prodThread.Start();
         }
 
         public void PauseProduction()
@@ -58,23 +90,23 @@ namespace WinFormToutEmbal.LibToutEmbal
 
         private void BoxOnProduct()
         {
-            _nbDefectiveBox = 0;
-            BoxProduced = 0;
-            while (BoxProduced < _boxProdMax)
+            while (BoxProduced < BoxProdMax)
             {
-                _myNewBox = new Box (_typeProduction);
-                if (_myNewBox.DefectiveBox)
+                myNewBox = new Box (TypeProduction);
+                Thread.Sleep(3600000 / BoxPerHour);
+                if (myNewBox.DefectiveBox)
                 {
-                    BoxProduced +=1;
+                    BoxProduced +=1;  
                 }
                 else
                 {
-                    _nbDefectiveBox += 1;
-                }
-                
-                Thread.Sleep(3600000/_boxPerHour);
+                    DefectiveBoxPerHour += 1;
+                    RateDefectiveBoxPerHour = Math.Round((double)DefectiveBoxPerHour / BoxPerHour, 4);
+                    RateDefectiveBoxFromStart = Math.Round((double)DefectiveBoxPerHour / BoxProdMax, 4);
+                }  
             }
         }
+ 
         private void UpdatedProdValue()
         {
             // si au moins 1 abonné à l'évènement

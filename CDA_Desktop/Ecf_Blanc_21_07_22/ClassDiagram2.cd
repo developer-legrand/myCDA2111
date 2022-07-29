@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ecf_Blanc_21_07_22.Candidate">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAQAAAAAAAAAAACAAAAAAAAAAABAAAAAAAAAEg=</HashCode>
+      <FileName>LibTrouverEmploi\Candidate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecf_Blanc_21_07_22.LibTrouverEmploi.ErrorValidationForm">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAQBAAAAAAAAAAAgAAAAAAAAICAACCQCAAEE=</HashCode>
+      <FileName>LibTrouverEmploi\ErrorValidationForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecf_Blanc_21_07_22.LibTrouverEmploi.LevelEducation">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>LibTrouverEmploi\LevelEducation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
