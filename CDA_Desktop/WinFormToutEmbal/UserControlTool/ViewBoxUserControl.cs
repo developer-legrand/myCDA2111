@@ -38,7 +38,7 @@ namespace WinFormToutEmbal.UserControlTool
             tbDefaultPerHour.Text = prod.RateDefectiveBoxPerHour.ToString();
             tbDefaultFromStart.Text = prod.RateDefectiveBoxFromStart.ToString();
         }
-        private void ProdUpdatedA(object sender, PropertyChangedEventArgs e)
+/*        private void ProdUpdatedA(object sender, PropertyChangedEventArgs e)
         {
             if (sender is Production prodSender)
             {
@@ -48,7 +48,7 @@ namespace WinFormToutEmbal.UserControlTool
                     viewBoxA.ViewBoxManagerValues(prodA);
                 }));
             }
-        }
+        }*/
 
     }
 }

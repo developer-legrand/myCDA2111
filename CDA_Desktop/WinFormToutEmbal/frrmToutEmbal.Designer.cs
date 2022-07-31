@@ -58,6 +58,9 @@
             this.pageB = new System.Windows.Forms.TabPage();
             this.pageA = new System.Windows.Forms.TabPage();
             this.tabBox = new System.Windows.Forms.TabControl();
+            this.progressBarProdA = new System.Windows.Forms.ProgressBar();
+            this.progressBarProdB = new System.Windows.Forms.ProgressBar();
+            this.progressBarProdC = new System.Windows.Forms.ProgressBar();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabBox.SuspendLayout();
@@ -111,21 +114,21 @@
             // aToolStripMenuItem
             // 
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
             this.aToolStripMenuItem.Text = "A";
             this.aToolStripMenuItem.Click += new System.EventHandler(this.aToolStripMenuItem_Click);
             // 
             // bToolStripMenuItem
             // 
             this.bToolStripMenuItem.Name = "bToolStripMenuItem";
-            this.bToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
             this.bToolStripMenuItem.Text = "B";
             this.bToolStripMenuItem.Click += new System.EventHandler(this.bToolStripMenuItem_Click);
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
             this.cToolStripMenuItem.Text = "C";
             // 
             // arrêterToolStripMenuItem
@@ -141,19 +144,20 @@
             // aToolStripMenuItem1
             // 
             this.aToolStripMenuItem1.Name = "aToolStripMenuItem1";
-            this.aToolStripMenuItem1.Size = new System.Drawing.Size(82, 22);
+            this.aToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.aToolStripMenuItem1.Text = "A";
+            this.aToolStripMenuItem1.Click += new System.EventHandler(this.aToolStripMenuItem1_Click);
             // 
             // bToolStripMenuItem1
             // 
             this.bToolStripMenuItem1.Name = "bToolStripMenuItem1";
-            this.bToolStripMenuItem1.Size = new System.Drawing.Size(82, 22);
+            this.bToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.bToolStripMenuItem1.Text = "B";
             // 
             // cToolStripMenuItem1
             // 
             this.cToolStripMenuItem1.Name = "cToolStripMenuItem1";
-            this.cToolStripMenuItem1.Size = new System.Drawing.Size(82, 22);
+            this.cToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cToolStripMenuItem1.Text = "C";
             // 
             // continuerToolStripMenuItem
@@ -289,11 +293,35 @@
             this.tabBox.Size = new System.Drawing.Size(545, 186);
             this.tabBox.TabIndex = 9;
             // 
+            // progressBarProdA
+            // 
+            this.progressBarProdA.Location = new System.Drawing.Point(215, 277);
+            this.progressBarProdA.Name = "progressBarProdA";
+            this.progressBarProdA.Size = new System.Drawing.Size(233, 23);
+            this.progressBarProdA.TabIndex = 10;
+            // 
+            // progressBarProdB
+            // 
+            this.progressBarProdB.Location = new System.Drawing.Point(215, 305);
+            this.progressBarProdB.Name = "progressBarProdB";
+            this.progressBarProdB.Size = new System.Drawing.Size(233, 23);
+            this.progressBarProdB.TabIndex = 11;
+            // 
+            // progressBarProdC
+            // 
+            this.progressBarProdC.Location = new System.Drawing.Point(215, 334);
+            this.progressBarProdC.Name = "progressBarProdC";
+            this.progressBarProdC.Size = new System.Drawing.Size(233, 23);
+            this.progressBarProdC.TabIndex = 12;
+            // 
             // frmToutEmbal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progressBarProdC);
+            this.Controls.Add(this.progressBarProdB);
+            this.Controls.Add(this.progressBarProdA);
             this.Controls.Add(this.tabBox);
             this.Controls.Add(this.lblProdC);
             this.Controls.Add(this.lblProdB);
@@ -347,5 +375,8 @@
         private UserControlTool.ViewBoxUserControl viewBoxManager2;
         private TabPage pageA;
         private TabControl tabBox;
+        private ProgressBar progressBarProdA;
+        private ProgressBar progressBarProdB;
+        private ProgressBar progressBarProdC;
     }
 }

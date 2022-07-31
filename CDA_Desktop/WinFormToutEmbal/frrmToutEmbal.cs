@@ -37,9 +37,9 @@ namespace WinFormToutEmbal
             pageB.Controls.Add(viewBoxB);
             viewBoxC = new ViewBoxUserControl();
             pageC.Controls.Add(viewBoxC);
-/*
+
             prodA.ProdValueChanged += ProdUpdatedA;
-            prodB.ProdValueChanged += ProdUpdatedB;*/
+            prodB.ProdValueChanged += ProdUpdatedB;
         }
 
         private void aToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace WinFormToutEmbal
             prodB.StartProduction();
         }
 
-  /*      private void ProdUpdatedA(object sender, PropertyChangedEventArgs e)
+        private void ProdUpdatedA(object sender, PropertyChangedEventArgs e)
         {
             if (sender is Production prodSender)
             {
@@ -75,7 +75,11 @@ namespace WinFormToutEmbal
                     viewBoxB.ViewBoxManagerValues(prodB);
                 }));
             }
-        }*/
+        }
 
+        private void aToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            prodA.StopProduction();
+        }
     }
 }

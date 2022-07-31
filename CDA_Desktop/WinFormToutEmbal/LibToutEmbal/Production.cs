@@ -12,7 +12,6 @@ namespace WinFormToutEmbal.LibToutEmbal
 
         //Variables
         public event PropertyChangedEventHandler ProdValueChanged;
-        public event PropertyChangedEventHandler OnProdValueChanged;
 
         public Thread prodThread;
         private int defectiveBoxPerHour;
@@ -20,6 +19,7 @@ namespace WinFormToutEmbal.LibToutEmbal
         private double rateDefectiveBoxFromStart;
         private Box myNewBox;
         private int boxProduced;
+        private bool threadStatus;
 
         private string TypeProduction { get; set; }
         private int BoxPerHour { get; set; }
@@ -75,22 +75,29 @@ namespace WinFormToutEmbal.LibToutEmbal
 
         public void StartProduction()
         {
+            threadStatus = true;
             prodThread = new Thread(BoxOnProduct);
             prodThread.Start();
         }
 
+        public Thread GetProdThread()
+        {
+            return prodThread;
+        }
+
         public void PauseProduction()
         {
-
+            prodThread.Interrupt();
         }
+
         public void StopProduction()
         {
-
+            threadStatus = false;
         }
 
         private void BoxOnProduct()
         {
-            while (BoxProduced < BoxProdMax)
+            while (BoxProduced < BoxProdMax && threadStatus)
             {
                 myNewBox = new Box (TypeProduction);
                 Thread.Sleep(3600000 / BoxPerHour);
