@@ -15,6 +15,7 @@ namespace WinFormToutEmbal
         ViewBoxUserControl viewBoxB;
         ViewBoxUserControl viewBoxC;
 
+
         private int boxProduced;
         private int defectiveBoxPerHour;
         private int rateDefectiveBoxPerHour;
@@ -40,11 +41,28 @@ namespace WinFormToutEmbal
 
             prodA.ProdValueChanged += ProdUpdatedA;
             prodB.ProdValueChanged += ProdUpdatedB;
+
+
         }
 
-        private void aToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ClickOnTool(object sender, EventArgs e)
         {
-            prodA.StartProduction();
+            ToolStripItem tsm = (ToolStripItem)sender;
+            ToolStripItem tsmParent = tsm.OwnerItem;
+            string tsmParentTag = tsmParent.Tag.ToString();
+
+            switch (tsmParentTag)
+            {
+                case "start":
+                    prod.StartProduction();
+                    break;
+                case "stop":
+                    prod.StopProduction();
+                    break;
+                case "pause":
+                    prod.PauseProduction();
+                    break;
+            }
         }
 
 
@@ -60,7 +78,7 @@ namespace WinFormToutEmbal
                 this.Invoke(new MethodInvoker(() =>
                 {
                     progressBarProdA.Value = prodSender.BoxProduced;
-                    viewBoxA.ViewBoxManagerValues(prodA);
+                    viewBoxA.ChangeProductionValues(prodA);
                 }));
             }
         }
@@ -72,14 +90,11 @@ namespace WinFormToutEmbal
                 this.Invoke(new MethodInvoker(() =>
                 {
                     progressBarProdB.Value = prodSender.BoxProduced;
-                    viewBoxB.ViewBoxManagerValues(prodB);
+                    viewBoxB.ChangeProductionValues(prodB);
                 }));
             }
         }
 
-        private void aToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            prodA.StopProduction();
-        }
+
     }
 }

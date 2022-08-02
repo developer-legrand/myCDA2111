@@ -18,6 +18,7 @@ namespace Ecf_Blanc_21_07_22.LibTrouverEmploi
         private string firstName;
         private string lastName;
         private string date;
+        String uhu;
 
         public ErrorValidationForm()
         {
@@ -58,11 +59,7 @@ namespace Ecf_Blanc_21_07_22.LibTrouverEmploi
                 {
                 //convertDateNow = DateTime.ParseExact(uhu, datePattern, CultureInfo.InvariantCulture);
                 convertDate = DateTime.ParseExact(date, datePattern, CultureInfo.InvariantCulture);
-                    if(convertDate > convertDateNow)
-                    {
-                        return false;
-                    }
-                    else  return true;
+                return (convertDate < convertDateNow);
                 }
             
                 catch(Exception e)

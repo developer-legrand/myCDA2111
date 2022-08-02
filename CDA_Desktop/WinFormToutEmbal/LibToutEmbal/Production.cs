@@ -21,7 +21,7 @@ namespace WinFormToutEmbal.LibToutEmbal
         private int boxProduced;
         private bool threadStatus;
 
-        private string TypeProduction { get; set; }
+        public string TypeProduction { get; set; }
         private int BoxPerHour { get; set; }
         private int BoxProdMax { get; set; }
 
@@ -87,12 +87,12 @@ namespace WinFormToutEmbal.LibToutEmbal
 
         public void PauseProduction()
         {
-            prodThread.Interrupt();
+            threadStatus = false;
         }
 
         public void StopProduction()
         {
-            threadStatus = false;
+            
         }
 
         private void BoxOnProduct()
@@ -121,6 +121,11 @@ namespace WinFormToutEmbal.LibToutEmbal
             {
                 ProdValueChanged(this, new PropertyChangedEventArgs(nameof(BoxProduced)));
             }
+        }
+
+        private void CreateInstanceProduction()
+        {
+
         }
     }
 }

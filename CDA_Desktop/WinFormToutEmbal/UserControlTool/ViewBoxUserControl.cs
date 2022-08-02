@@ -31,7 +31,7 @@ namespace WinFormToutEmbal.UserControlTool
         }
 
 
-        public void ViewBoxManagerValues(Production p)
+        public void ChangeProductionValues(Production p)
         {
             this.prod = p;
             tbNumberBox.Text = prod.BoxProduced.ToString();

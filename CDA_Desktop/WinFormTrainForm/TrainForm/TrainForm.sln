@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeidiTrainForm.App", "HeidiTrainForm.App.csproj", "{44CC58B7-E302-4E03-9696-70E61BFED34A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeidiTrainForm.Lib", "..\libTrainForm\HeidiTrainForm.Lib.csproj", "{AE6AB2BD-4640-4757-AC90-0F8D88C85A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44CC58B7-E302-4E03-9696-70E61BFED34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44CC58B7-E302-4E03-9696-70E61BFED34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44CC58B7-E302-4E03-9696-70E61BFED34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44CC58B7-E302-4E03-9696-70E61BFED34A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6AB2BD-4640-4757-AC90-0F8D88C85A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6AB2BD-4640-4757-AC90-0F8D88C85A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6AB2BD-4640-4757-AC90-0F8D88C85A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6AB2BD-4640-4757-AC90-0F8D88C85A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E326152-F682-4C2A-B1DB-C07E2EF47E05}
+	EndGlobalSection
+EndGlobal

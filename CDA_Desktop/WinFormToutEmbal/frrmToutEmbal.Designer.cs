@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmToutEmbal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.démarrerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +62,10 @@
             this.progressBarProdA = new System.Windows.Forms.ProgressBar();
             this.progressBarProdB = new System.Windows.Forms.ProgressBar();
             this.progressBarProdC = new System.Windows.Forms.ProgressBar();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.prodcutionTraffic1 = new WinFormToutEmbal.UserControlTool.ProdcutionTraffic();
+            this.prodcutionTraffic2 = new WinFormToutEmbal.UserControlTool.ProdcutionTraffic();
+            this.prodcutionTraffic3 = new WinFormToutEmbal.UserControlTool.ProdcutionTraffic();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabBox.SuspendLayout();
@@ -73,7 +78,7 @@
             this.productionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(607, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -94,41 +99,40 @@
             // productionToolStripMenuItem
             // 
             this.productionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.démarrerToolStripMenuItem,
+            this.StartToolStripMenuItem,
             this.arrêterToolStripMenuItem,
             this.continuerToolStripMenuItem});
             this.productionToolStripMenuItem.Name = "productionToolStripMenuItem";
             this.productionToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.productionToolStripMenuItem.Text = "Production";
             // 
-            // démarrerToolStripMenuItem
+            // StartToolStripMenuItem
             // 
-            this.démarrerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StartToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aToolStripMenuItem,
             this.bToolStripMenuItem,
             this.cToolStripMenuItem});
-            this.démarrerToolStripMenuItem.Name = "démarrerToolStripMenuItem";
-            this.démarrerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.démarrerToolStripMenuItem.Text = "Démarrer";
+            this.StartToolStripMenuItem.Name = "StartToolStripMenuItem";
+            this.StartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.StartToolStripMenuItem.Tag = "start";
+            this.StartToolStripMenuItem.Text = "Démarrer";
             // 
             // aToolStripMenuItem
             // 
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aToolStripMenuItem.Text = "A";
-            this.aToolStripMenuItem.Click += new System.EventHandler(this.aToolStripMenuItem_Click);
             // 
             // bToolStripMenuItem
             // 
             this.bToolStripMenuItem.Name = "bToolStripMenuItem";
-            this.bToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
+            this.bToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bToolStripMenuItem.Text = "B";
-            this.bToolStripMenuItem.Click += new System.EventHandler(this.bToolStripMenuItem_Click);
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cToolStripMenuItem.Text = "C";
             // 
             // arrêterToolStripMenuItem
@@ -139,6 +143,7 @@
             this.cToolStripMenuItem1});
             this.arrêterToolStripMenuItem.Name = "arrêterToolStripMenuItem";
             this.arrêterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arrêterToolStripMenuItem.Tag = "stop";
             this.arrêterToolStripMenuItem.Text = "Arrêter";
             // 
             // aToolStripMenuItem1
@@ -146,7 +151,6 @@
             this.aToolStripMenuItem1.Name = "aToolStripMenuItem1";
             this.aToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.aToolStripMenuItem1.Text = "A";
-            this.aToolStripMenuItem1.Click += new System.EventHandler(this.aToolStripMenuItem1_Click);
             // 
             // bToolStripMenuItem1
             // 
@@ -168,24 +172,25 @@
             this.cToolStripMenuItem2});
             this.continuerToolStripMenuItem.Name = "continuerToolStripMenuItem";
             this.continuerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.continuerToolStripMenuItem.Tag = "pause";
             this.continuerToolStripMenuItem.Text = "continuer";
             // 
             // aToolStripMenuItem2
             // 
             this.aToolStripMenuItem2.Name = "aToolStripMenuItem2";
-            this.aToolStripMenuItem2.Size = new System.Drawing.Size(82, 22);
+            this.aToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.aToolStripMenuItem2.Text = "A";
             // 
             // bToolStripMenuItem2
             // 
             this.bToolStripMenuItem2.Name = "bToolStripMenuItem2";
-            this.bToolStripMenuItem2.Size = new System.Drawing.Size(82, 22);
+            this.bToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.bToolStripMenuItem2.Text = "B";
             // 
             // cToolStripMenuItem2
             // 
             this.cToolStripMenuItem2.Name = "cToolStripMenuItem2";
-            this.cToolStripMenuItem2.Size = new System.Drawing.Size(82, 22);
+            this.cToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.cToolStripMenuItem2.Text = "C";
             // 
             // statusStrip1
@@ -197,7 +202,7 @@
             this.toolStripStatusLabel4});
             this.statusStrip1.Location = new System.Drawing.Point(0, 428);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(607, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -228,7 +233,7 @@
             // lblProdA
             // 
             this.lblProdA.AutoSize = true;
-            this.lblProdA.Location = new System.Drawing.Point(34, 281);
+            this.lblProdA.Location = new System.Drawing.Point(119, 296);
             this.lblProdA.Name = "lblProdA";
             this.lblProdA.Size = new System.Drawing.Size(77, 15);
             this.lblProdA.TabIndex = 6;
@@ -237,7 +242,7 @@
             // lblProdB
             // 
             this.lblProdB.AutoSize = true;
-            this.lblProdB.Location = new System.Drawing.Point(36, 305);
+            this.lblProdB.Location = new System.Drawing.Point(119, 343);
             this.lblProdB.Name = "lblProdB";
             this.lblProdB.Size = new System.Drawing.Size(76, 15);
             this.lblProdB.TabIndex = 7;
@@ -246,7 +251,7 @@
             // lblProdC
             // 
             this.lblProdC.AutoSize = true;
-            this.lblProdC.Location = new System.Drawing.Point(36, 329);
+            this.lblProdC.Location = new System.Drawing.Point(119, 390);
             this.lblProdC.Name = "lblProdC";
             this.lblProdC.Size = new System.Drawing.Size(77, 15);
             this.lblProdC.TabIndex = 8;
@@ -287,7 +292,7 @@
             this.tabBox.Controls.Add(this.pageA);
             this.tabBox.Controls.Add(this.pageB);
             this.tabBox.Controls.Add(this.pageC);
-            this.tabBox.Location = new System.Drawing.Point(175, 52);
+            this.tabBox.Location = new System.Drawing.Point(27, 39);
             this.tabBox.Name = "tabBox";
             this.tabBox.SelectedIndex = 0;
             this.tabBox.Size = new System.Drawing.Size(545, 186);
@@ -295,30 +300,63 @@
             // 
             // progressBarProdA
             // 
-            this.progressBarProdA.Location = new System.Drawing.Point(215, 277);
+            this.progressBarProdA.Location = new System.Drawing.Point(228, 275);
             this.progressBarProdA.Name = "progressBarProdA";
-            this.progressBarProdA.Size = new System.Drawing.Size(233, 23);
+            this.progressBarProdA.Size = new System.Drawing.Size(233, 36);
             this.progressBarProdA.TabIndex = 10;
             // 
             // progressBarProdB
             // 
-            this.progressBarProdB.Location = new System.Drawing.Point(215, 305);
+            this.progressBarProdB.Location = new System.Drawing.Point(228, 322);
             this.progressBarProdB.Name = "progressBarProdB";
-            this.progressBarProdB.Size = new System.Drawing.Size(233, 23);
+            this.progressBarProdB.Size = new System.Drawing.Size(233, 36);
             this.progressBarProdB.TabIndex = 11;
             // 
             // progressBarProdC
             // 
-            this.progressBarProdC.Location = new System.Drawing.Point(215, 334);
+            this.progressBarProdC.Location = new System.Drawing.Point(228, 369);
             this.progressBarProdC.Name = "progressBarProdC";
-            this.progressBarProdC.Size = new System.Drawing.Size(233, 23);
+            this.progressBarProdC.Size = new System.Drawing.Size(233, 36);
             this.progressBarProdC.TabIndex = 12;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "green.png");
+            this.imageList1.Images.SetKeyName(1, "red.png");
+            this.imageList1.Images.SetKeyName(2, "orange.png");
+            // 
+            // prodcutionTraffic1
+            // 
+            this.prodcutionTraffic1.Location = new System.Drawing.Point(467, 275);
+            this.prodcutionTraffic1.Name = "prodcutionTraffic1";
+            this.prodcutionTraffic1.Size = new System.Drawing.Size(101, 36);
+            this.prodcutionTraffic1.TabIndex = 13;
+            // 
+            // prodcutionTraffic2
+            // 
+            this.prodcutionTraffic2.Location = new System.Drawing.Point(468, 324);
+            this.prodcutionTraffic2.Name = "prodcutionTraffic2";
+            this.prodcutionTraffic2.Size = new System.Drawing.Size(100, 34);
+            this.prodcutionTraffic2.TabIndex = 14;
+            // 
+            // prodcutionTraffic3
+            // 
+            this.prodcutionTraffic3.Location = new System.Drawing.Point(468, 371);
+            this.prodcutionTraffic3.Name = "prodcutionTraffic3";
+            this.prodcutionTraffic3.Size = new System.Drawing.Size(100, 34);
+            this.prodcutionTraffic3.TabIndex = 15;
             // 
             // frmToutEmbal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(607, 450);
+            this.Controls.Add(this.prodcutionTraffic3);
+            this.Controls.Add(this.prodcutionTraffic2);
+            this.Controls.Add(this.prodcutionTraffic1);
             this.Controls.Add(this.progressBarProdC);
             this.Controls.Add(this.progressBarProdB);
             this.Controls.Add(this.progressBarProdA);
@@ -348,7 +386,7 @@
         private ToolStripMenuItem fichierToolStripMenuItem;
         private ToolStripMenuItem quitterToolStripMenuItem;
         private ToolStripMenuItem productionToolStripMenuItem;
-        private ToolStripMenuItem démarrerToolStripMenuItem;
+        private ToolStripMenuItem StartToolStripMenuItem;
         private ToolStripMenuItem aToolStripMenuItem;
         private ToolStripMenuItem bToolStripMenuItem;
         private ToolStripMenuItem cToolStripMenuItem;
@@ -378,5 +416,9 @@
         private ProgressBar progressBarProdA;
         private ProgressBar progressBarProdB;
         private ProgressBar progressBarProdC;
+        private ImageList imageList1;
+        private UserControlTool.ProdcutionTraffic prodcutionTraffic1;
+        private UserControlTool.ProdcutionTraffic prodcutionTraffic2;
+        private UserControlTool.ProdcutionTraffic prodcutionTraffic3;
     }
 }

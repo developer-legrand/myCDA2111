@@ -11,23 +11,14 @@ namespace WinFormToutEmbal.LibToutEmbal
         private object sender;
         private Production prod;
 
-        public ViewControlProduction (object _sender, Production _prod)
+
+        public ViewControlProduction ()
         {
-            this.sender = _sender;
-            this.prod = _prod;
+            this.sender = sender;
+            this.prod = prod;
+            sender.Tag = prod.TypeProduction;
         }
 
-
-        private void test()
-        {
-            if (sender is ToolStripMenuItem tsmItem)
-            {
-                if(tsmItem.GetCurrentParent().AreEq)
-                {
-
-                }
-            }
-        }
 
     }
 }
