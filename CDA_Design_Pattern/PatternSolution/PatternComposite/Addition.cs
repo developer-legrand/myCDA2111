@@ -7,7 +7,7 @@ namespace PatternComposite
 {
     public class Addition : Binaire
     {
-        private List<Nombre> listeNombre;
+        
         public Addition(Expression op1, Expression op2) : base(op1, op2)
         {
             
@@ -25,10 +25,11 @@ namespace PatternComposite
 
         public override string Formater()
         {
-           foreach(Nombre nombre in listeNombre)
+            while (op2 is not Addition)
             {
-                return 
+                return op1.ToString() + " + " + op2.ToString() + " = " + Evaluer();
             }
+             return "toto";
         }
     }
 }

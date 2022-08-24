@@ -25,7 +25,7 @@ namespace PatternComposite
 
         public override string Formater()
         {
-            return "toto";
+            return op1.ToString() + " - " + op2.ToString() + " = " + Evaluer();
         }
 
     }

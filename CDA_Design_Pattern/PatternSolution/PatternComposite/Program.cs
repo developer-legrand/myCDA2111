@@ -7,6 +7,7 @@ Console.WriteLine("-------------------------------------------");
 Expression exp1 = new Addition(new Nombre(2), new Nombre(3));
 Expression exp2 = new Addition(new Nombre(89), exp1);
 Console.WriteLine(exp1);
+Console.WriteLine(exp1.GetType());
 Console.WriteLine(exp2);
 Console.WriteLine("-------------------------------------------");
 Expression exp3 = new Soustraction(new Nombre(2), new Nombre(3));
@@ -27,8 +28,9 @@ Console.WriteLine(exp1.Formater());
 Console.WriteLine(exp2.Formater());
 Console.WriteLine(exp3.Formater());
 Console.WriteLine(exp4.Formater());
-Console.WriteLine(exp5.Formater()); 
+Console.WriteLine(exp5.Formater());
 Console.WriteLine(exp6.Formater());
+
 
 
 

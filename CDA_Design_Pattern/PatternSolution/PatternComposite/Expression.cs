@@ -8,6 +8,8 @@ namespace PatternComposite
     
     public abstract class Expression
     {
+        
+
         public abstract int Evaluer();
         public abstract string Formater();
     }

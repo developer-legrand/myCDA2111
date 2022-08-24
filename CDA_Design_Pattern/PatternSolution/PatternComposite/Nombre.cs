@@ -26,7 +26,7 @@ namespace PatternComposite
 
         public override string Formater()
         {
-             return valeur.ToString() + "uhu";
+           return "";
         }
     }
 }
