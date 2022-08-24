@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="PatternComposite.Expression">
+    <Position X="0.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternComposite.Nombre">
+    <Position X="0.5" Y="3.5" Width="1.75" />
+    <InheritanceLine Type="PatternComposite.Expression" FixedFromPoint="true">
+      <Path>
+        <Point X="1.375" Y="2.546" />
+        <Point X="1.375" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAABAAAACAAAAAAAABAAAAA=</HashCode>
+      <FileName>Nombre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternComposite.Binaire">
+    <Position X="5" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Binaire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternComposite.Addition">
+    <Position X="2.75" Y="3.75" Width="3" />
+    <InheritanceLine Type="PatternComposite.Binaire" FixedFromPoint="true">
+      <Path>
+        <Point X="6" Y="3.127" />
+        <Point X="6" Y="3.45" />
+        <Point X="4.25" Y="3.45" />
+        <Point X="4.25" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Addition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternComposite.Soustraction">
+    <Position X="6.5" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Soustraction.cs</FileName>
+      <NewMemberFileName>Addition.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
