@@ -23,10 +23,9 @@ namespace PatternComposite
             return Evaluer().ToString();
         }
 
-        public override string Formater()
+        public override  string Formater()
         {
-            return op1.ToString() + " - " + op2.ToString() + " = " + Evaluer();
+            return (op1.Formater()) + " - " + (op2.Formater());
         }
-
-    }
+    } 
 }

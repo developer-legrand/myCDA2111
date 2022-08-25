@@ -3,7 +3,7 @@
   <Class Name="PatternComposite.Expression">
     <Position X="0.5" Y="1.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAABAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAIABAAAAA=</HashCode>
       <FileName>Expression.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -11,7 +11,7 @@
     <Position X="0.5" Y="3.5" Width="1.75" />
     <InheritanceLine Type="PatternComposite.Expression" FixedFromPoint="true">
       <Path>
-        <Point X="1.375" Y="2.546" />
+        <Point X="1.375" Y="3.19" />
         <Point X="1.375" Y="3.5" />
       </Path>
     </InheritanceLine>
@@ -22,23 +22,41 @@
   </Class>
   <Class Name="PatternComposite.Binaire">
     <Position X="5" Y="1.25" Width="2.75" />
+    <InheritanceLine Type="PatternComposite.Expression" FixedFromPoint="true">
+      <Path>
+        <Point X="2.25" Y="2.654" />
+        <Point X="2.625" Y="2.654" />
+        <Point X="2.625" Y="2.131" />
+        <Point X="5" Y="2.131" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="op1" Type="PatternComposite.Expression" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="1.717" />
+        <Point X="2.25" Y="1.717" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Binaire.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="op1" />
+      <Field Name="op2" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="PatternComposite.Addition">
     <Position X="2.75" Y="3.75" Width="3" />
     <InheritanceLine Type="PatternComposite.Binaire" FixedFromPoint="true">
       <Path>
-        <Point X="6" Y="3.127" />
-        <Point X="6" Y="3.45" />
-        <Point X="4.25" Y="3.45" />
+        <Point X="6" Y="2.483" />
+        <Point X="6" Y="3.375" />
+        <Point X="4.25" Y="3.375" />
         <Point X="4.25" Y="3.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>IAAAAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAABAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>Addition.cs</FileName>
     </TypeIdentifier>
   </Class>

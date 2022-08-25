@@ -21,12 +21,12 @@ namespace PatternComposite
 
         public override string ToString()
         {
-            return valeur.ToString();
+            return Evaluer().ToString();
         }
 
         public override string Formater()
         {
-           return "";
+            return ToString();
         }
     }
 }
