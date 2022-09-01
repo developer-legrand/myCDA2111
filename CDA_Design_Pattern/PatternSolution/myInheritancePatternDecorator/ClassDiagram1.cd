@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="pizzaPrice = 0.00&#xD;&#xA;if(ingredient == true)&#xD;&#xA;return pizzaPrice += ingredientPrice">
+    <Position X="7.802" Y="4.292" Height="0.75" Width="2.346" />
+  </Comment>
+  <Class Name="myInheritancePatternDecorator.Pizza">
+    <Position X="8" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAIAAAAABYAAOAACAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaTomatoBase">
+    <Position X="1" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaTomatoBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaCreamBase">
+    <Position X="3.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaCreamBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaTomatoBaseHam">
+    <Position X="0.75" Y="4" Width="2" />
+    <InheritanceLine Type="myInheritancePatternDecorator.PizzaTomatoBase" FixedFromPoint="true">
+      <Path>
+        <Point X="1.75" Y="3.434" />
+        <Point X="1.75" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaTomatoBaseHam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaTomatoBaseSalmon">
+    <Position X="5.25" Y="4" Width="2" />
+    <InheritanceLine Type="myInheritancePatternDecorator.PizzaTomatoBase" FixedFromPoint="true">
+      <Path>
+        <Point X="1.75" Y="3.434" />
+        <Point X="1.75" Y="3.7" />
+        <Point X="6.25" Y="3.7" />
+        <Point X="6.25" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>PizzaTomatoBaseSalmon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaTomatoBaseHamEgg">
+    <Position X="0.75" Y="6" Width="2.25" />
+    <InheritanceLine Type="myInheritancePatternDecorator.PizzaTomatoBaseHam" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.688" Y="5.684" />
+        <Point X="1.688" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaTomatoBaseHamEgg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaBase">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaTomatoBaseEgg">
+    <Position X="3" Y="4" Width="2" />
+    <InheritanceLine Type="myInheritancePatternDecorator.PizzaTomatoBase" FixedFromPoint="true">
+      <Path>
+        <Point X="1.75" Y="3.434" />
+        <Point X="1.75" Y="3.7" />
+        <Point X="4" Y="3.7" />
+        <Point X="4" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>egg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
