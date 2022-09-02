@@ -14,5 +14,15 @@ namespace myInheritancePatternDecorator
         {
             throw new System.NotImplementedException();
         }
+
+        public double Cost()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public string Description()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

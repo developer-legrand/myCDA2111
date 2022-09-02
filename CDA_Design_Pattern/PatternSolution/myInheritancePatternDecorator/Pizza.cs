@@ -16,22 +16,12 @@ namespace myInheritancePatternDecorator
         private bool anchovy;
         private bool pepper;
 
-        public void GetDescription()
+        public void Description()
         {
             throw new System.NotImplementedException();
         }
 
-        public string SetDescription()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public double GetCost()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void SetCost()
+        public double Cost()
         {
             throw new System.NotImplementedException();
         }

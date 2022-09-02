@@ -7,5 +7,14 @@ namespace myInheritancePatternDecorator
 {
     public class PizzaBase
     {
+        public string Description()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public double Cost()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
