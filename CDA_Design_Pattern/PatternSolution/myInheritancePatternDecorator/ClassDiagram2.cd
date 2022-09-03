@@ -1,10 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="myInheritancePatternDecorator.Pizza">
-    <Position X="1.5" Y="0.5" Width="2" />
+    <Position X="4.25" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAQAIAAAAgBYAAGAAAABAAAAAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaCreamBase">
+    <Position X="3" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaCreamBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="myInheritancePatternDecorator.PizzaTomatoBase">
+    <Position X="5.75" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaTomatoBase.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
