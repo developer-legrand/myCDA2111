@@ -5,23 +5,35 @@ using System.Text;
 
 namespace myInheritancePatternDecorator
 {
-    public class Pizza
+    public abstract class Pizza
     {
-        private bool ham;
-        private bool olive;
-        private bool swisscheese;
-        private bool mozz;
-        private bool egg;
-        private bool chorizo;
-        private bool anchovy;
-        private bool pepper;
+        public bool ham;
+        public bool olive;
+        public bool swisscheese;
+        public bool mozz;
+        public bool egg;
+        public bool chorizo;
+        public bool anchovy;
+        public bool pepper;
 
-        public void Description()
+
+        public abstract string Description();
+        public  double Cost()
+        {
+            return 0.00;
+        }
+
+        public void addAnchovy()
         {
             throw new System.NotImplementedException();
         }
 
-        public double Cost()
+        public void addChorizo()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void addEgg()
         {
             throw new System.NotImplementedException();
         }

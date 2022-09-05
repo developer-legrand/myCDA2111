@@ -1,4 +1,4 @@
-﻿using System;
+﻿         using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +12,6 @@ namespace myPatternDecorator.ConcreteDecorator
             this.elementToDecorate = elementToDecorate;
         }
         public override string Description => elementToDecorate.Description + " - Anchovy";
-        public override double Price => 1.00 + elementToDecorate.Price;
+        public override double Price => 0.70 + elementToDecorate.Price;
     }
 }

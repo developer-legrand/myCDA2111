@@ -7,7 +7,7 @@ namespace myPatternDecorator
 {
     public interface IElementPizza
     {
-        public string Description { get; }
-        public double Price { get; }
+        public abstract string Description { get; }
+        public abstract double Price { get; }
     }
 }

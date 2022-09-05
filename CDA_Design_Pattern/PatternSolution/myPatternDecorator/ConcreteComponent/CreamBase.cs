@@ -7,21 +7,13 @@ namespace myPatternDecorator.ConcreteComponent
 {
     public class CreamBase : IElementPizza
     {
-
-
-        private string description;
-
-   
         public double Price { get; }
-        public string Description { get => description; /*set => description = value;*/ }
+        public string Description { get; }
 
         public CreamBase()
         {
-            description = "Pizza Cream Base";
+            Description = "Pizza Cream Base";
             Price = 9.00;
         }
-
-
-        
     }
 }

@@ -5,16 +5,10 @@ using System.Text;
 
 namespace myInheritancePatternDecorator
 {
-    public class PizzaBase
+    public abstract class PizzaBase
     {
-        public string Description()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract string Description();
+        public abstract double Cost();
 
-        public double Cost()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

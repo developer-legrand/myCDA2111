@@ -3,13 +3,9 @@ using myPatternDecorator;
 using myPatternDecorator.ConcreteComponent;
 using myPatternDecorator.ConcreteDecorator;
 
-Console.WriteLine("Hello, Pizza Maker!");
-
+Console.WriteLine("Hello, Pizza Miam - Miam!");
 IElementPizza myPizza = new CreamBase();
-myPizza = new Olive(myPizza);
+myPizza = new Anchovy(myPizza);
 myPizza = new Chorizo(myPizza);
-myPizza = new Ham(myPizza);
-
-
 Console.WriteLine(myPizza.Description);
 Console.WriteLine(myPizza.Price);

@@ -5,24 +5,36 @@ using System.Text;
 
 namespace myInheritancePatternDecorator
 {
-    public class PizzaTomatoBase : PizzaBase
+    public class PizzaTomatoBase : Pizza
     {
 
         private bool tomato;
 
         public PizzaTomatoBase()
         {
-            throw new System.NotImplementedException();
+            this.tomato = true;
+            this.anchovy = true;
+
         }
 
-        public double Cost()
+        public override double Cost()
         {
-            throw new System.NotImplementedException();
+            double pizzaCost = 0;
+            if (tomato)
+            {
+                pizzaCost += 12;
+                if (anchovy)
+                {
+                    pizzaCost += 1;
+                }
+            }
+
+            else return pizzaCost;
         }
 
-        public string Description()
+        public override string Description()
         {
-            throw new System.NotImplementedException();
+            return "pizza base tomate";
         }
     }
 }
