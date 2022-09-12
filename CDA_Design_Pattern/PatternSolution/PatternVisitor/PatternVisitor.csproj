@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="ConsoleShapeVisitor\NewFolder\" />
+    <Folder Include="WinformShapeVisitor\" />
+  </ItemGroup>
+
 </Project>
