@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="PatternAbstractFactory.Camion">
+    <Position X="6" Y="2" Width="1.75" />
+    <InheritanceLine Type="PatternAbstractFactory.Vehicule" FixedFromPoint="true">
+      <Path>
+        <Point X="8.875" Y="1.603" />
+        <Point X="8.875" Y="1.808" />
+        <Point X="6.875" Y="1.808" />
+        <Point X="6.875" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Voiture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternAbstractFactory.Bus">
+    <Position X="8" Y="2" Width="1.75" />
+    <InheritanceLine Type="PatternAbstractFactory.Vehicule" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="8.875" Y="1.603" />
+        <Point X="8.875" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternAbstractFactory.FabriqueRenault">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FabriqueRenault.cs</FileName>
+      <NewMemberFileName>FabriquePeugeot.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PatternAbstractFactory.FabriquePeugeot">
+    <Position X="3.25" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FabriquePeugeot.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PatternAbstractFactory.Voiture">
+    <Position X="10" Y="2" Width="1.75" />
+    <InheritanceLine Type="PatternAbstractFactory.Vehicule" FixedFromPoint="true">
+      <Path>
+        <Point X="8.875" Y="1.603" />
+        <Point X="8.875" Y="1.808" />
+        <Point X="10.875" Y="1.808" />
+        <Point X="10.875" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FabriqueVoiture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternAbstractFactory.Vehicule">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vehicule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PatternAbstractFactory.Gti">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DeuxCentCinq.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternAbstractFactory.Tdi">
+    <Position X="4.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tdi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PatternAbstractFactory.IFabriqueVehicule">
+    <Position X="2" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFabriqueVehicule.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

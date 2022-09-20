@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="PatternVisitor.Figure">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Figure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternVisitor.Rectangle">
+    <Position X="0.5" Y="3" Width="3.25" />
+    <InheritanceLine Type="PatternVisitor.Figure" FixedToPoint="true">
+      <Path>
+        <Point X="2.125" Y="2.247" />
+        <Point X="2.125" Y="2.622" />
+        <Point X="4.125" Y="2.622" />
+        <Point X="4.125" Y="3.938" />
+        <Point X="3.75" Y="3.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAACAAAAAAAAAABA=</HashCode>
+      <FileName>Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternVisitor.Triangle">
+    <Position X="0.5" Y="5" Width="3.25" />
+    <InheritanceLine Type="PatternVisitor.Figure" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.125" Y="2.247" />
+        <Point X="2.125" Y="2.622" />
+        <Point X="4.125" Y="2.622" />
+        <Point X="4.125" Y="5.938" />
+        <Point X="3.75" Y="5.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAACgAQAAAAAAAAA=</HashCode>
+      <FileName>Triangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternVisitor.Cercle">
+    <Position X="0.5" Y="7.25" Width="3.25" />
+    <InheritanceLine Type="PatternVisitor.Figure" FixedToPoint="true">
+      <Path>
+        <Point X="2.125" Y="2.247" />
+        <Point X="2.125" Y="2.622" />
+        <Point X="4.125" Y="2.622" />
+        <Point X="4.125" Y="8.188" />
+        <Point X="3.75" Y="8.188" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cercle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternVisitor.Figures">
+    <Position X="4.5" Y="3" Width="3.5" />
+    <InheritanceLine Type="PatternVisitor.Figure" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="1.625" />
+        <Point X="5.938" Y="1.625" />
+        <Point X="5.938" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Figures.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="sesFigures" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PatternVisitor.VisiteurDeFigurePourConsole">
+    <Position X="8.5" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VisiteurDeFigurePourConsole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternVisitor.VisiteurDeFigurePourWinForm">
+    <Position X="8.5" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VisiteurDeFigurePourWinForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PatternVisitor.IVisiteurDeFigure">
+    <Position X="8.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IVisiteurDeFigure.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
