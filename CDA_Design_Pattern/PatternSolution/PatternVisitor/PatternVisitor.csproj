@@ -8,8 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ConsoleShapeVisitor\NewFolder\" />
-    <Folder Include="WinformShapeVisitor\" />
+    <Compile Remove="ConsoleShapeVisitor\**" />
+    <Compile Remove="WinformShapeVisitor\**" />
+    <EmbeddedResource Remove="ConsoleShapeVisitor\**" />
+    <EmbeddedResource Remove="WinformShapeVisitor\**" />
+    <None Remove="ConsoleShapeVisitor\**" />
+    <None Remove="WinformShapeVisitor\**" />
   </ItemGroup>
 
 </Project>

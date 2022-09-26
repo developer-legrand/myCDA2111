@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="patternObserver.AffichageConditions">
+    <Position X="7" Y="2.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAACAAAAAAAQAAAAAAAAAAAIAQEAAAAAAA=</HashCode>
+      <FileName>AffichageConditions.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="patternObserver.DonneesMeteo">
+    <Position X="1.25" Y="2.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAABAAAAAEAAAAAAAAAgABAAAAAIAYAAAAAQAA=</HashCode>
+      <FileName>DonneesMeteo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="patternObserver.Affichage">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Affichage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="patternObserver.Observateur">
+    <Position X="7" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Observateur.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="patternObserver.Sujet">
+    <Position X="1.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAQAA=</HashCode>
+      <FileName>Sujet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
