@@ -8,11 +8,6 @@ Video v = new Video(sv);
 
 v.Play();
 v.Play();
-v.Play();
-v.Play();
-v.Play();
-v.Play();
-v.Play();
 v.Stop();
 
 
